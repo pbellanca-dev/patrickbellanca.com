@@ -48,12 +48,21 @@ Preview locally: `npx http-server@14.1.1 docs -p 8090` then open http://localhos
 2. GitHub shows a TXT record (`_github-pages-challenge-pbellanca-dev`). Add it in Porkbun (step 3), then click **Verify**.
 
 ### 3. Change DNS at Porkbun
-Porkbun → Domain Management → patrickbellanca.com → **DNS**.
+Porkbun → **ACCOUNT → Domain Management** → patrickbellanca.com → **Details** drop-down → edit icon next to **DNS Records**.
+New records are added in the form at the top; existing ones are under **Current Records** at the bottom (trash-can icon deletes).
+In the **Host** box type only the part before the domain — Porkbun adds `.patrickbellanca.com` itself.
 
-**Delete** (these point at WordPress.com):
-- `A  patrickbellanca.com  192.0.79.158`
-- `A  patrickbellanca.com  192.0.79.166`
-- any `A`/`CNAME`/`ALIAS` record for `www` that points at WordPress.
+GitHub verification TXT record (from GitHub → Settings → Pages → Add a domain):
+
+| Type | Host | Answer |
+|---|---|---|
+| TXT | `_github-pages-challenge-pbellanca-dev` | the code GitHub shows |
+
+**Delete** (these point at Porkbun's *Cloud for WordPress* hosting, which runs on WP Cloud):
+- `A  (blank host)  192.0.79.158`
+- `A  (blank host)  192.0.79.166`
+- `A  www  192.0.79.158`
+- `A  www  192.0.79.166`
 
 **Add:**
 
@@ -79,16 +88,19 @@ Porkbun → Domain Management → patrickbellanca.com → **DNS**.
 
 ---
 
-## Checklist before cancelling the WordPress.com plan
+## Checklist before cancelling the WordPress plan
+
+The WordPress site is Porkbun's **Cloud for WordPress** hosting ($120/year), bought in the same Porkbun
+account as the domain. Cancelling that hosting product does **not** close the Porkbun account or the
+domain registration — those are separate products in the same account.
 
 Do these in order; only cancel when every box is ticked.
 
-- [ ] **Back up WordPress first** (while it's still live): WordPress.com dashboard → **Tools → Export → Export all** (content XML, emailed/downloaded), and **Export media library** (downloads all uploads). Save both somewhere safe, e.g. `C:\dev\patrickbellanca-site\wordpress-backup\` (it's fine to keep out of git).
-  (All images already exist full-size in `originals/` too.)
+- [x] **Back up WordPress first**: content export and media list are in `wordpress\`, and all 216 media files are in `wordpress\media\` (git-ignored).
 - [ ] All pages migrated: Home (19 game cards), 19 game breakdowns, Resume (+ PDF), About, Achievements. *(Done in this folder.)*
 - [ ] New site live on `https://patrickbellanca.com` with the padlock (HTTPS), and `www` redirects to it.
 - [ ] Opened it on your phone and it looks right.
 - [ ] Sent yourself a test email to your `@patrickbellanca.com` address (if you use one) and it still arrives.
-- [ ] Check WordPress.com → **Upgrades → Domains**: if `patrickbellanca.com` is listed as a *connected/mapped* domain, remove it there — that only disconnects it from WordPress.com; the domain itself stays registered at Porkbun.
-- [ ] Cancel the plan: WordPress.com → **Upgrades → Purchases** → the plan → **Cancel plan** (ask for a refund if you're within the refund window). Turn off auto-renew.
-- [ ] Make sure the **Porkbun domain registration** itself stays on auto-renew — that's separate from WordPress and you still need it.
+- [ ] Cancel the hosting in Porkbun: open the *Cloud for WordPress* product for patrickbellanca.com (the "Cloud for WordPress" link you see in your Porkbun account) → turn off auto-renew / cancel. Only cancel the *Cloud for WordPress* product — not the domain. If unsure which button does what, Porkbun support (1-855-767-5286, chat, or support@porkbun.com) can confirm before you click.
+- [ ] Afterwards, re-check DNS: cancelling hosting must not have put the WordPress A records back or removed the GitHub ones (Claude can check this).
+- [ ] Make sure the **Porkbun domain registration** itself stays on auto-renew — that's separate from the hosting and you still need it.
