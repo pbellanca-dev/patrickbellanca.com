@@ -1,0 +1,54 @@
+{
+  "slug": "madden16-breakdown",
+  "title": "Madden NFL 16",
+  "role": "Game Designer – PlayStation 4, Xbox One",
+  "hero": "/img/2024/08/pic0.webp",
+  "intro": [
+    "<em>Madden NFL 16</em> represented the culmination of years of hard work and marked my final year on the Presentation team. Partnered with a Cinematic Director, our goal was to raise the bar on the visual fidelity of our simulated football broadcast."
+  ],
+  "sections": [
+    {
+      "heading": "BROADCAST-INSPIRED VISUALS",
+      "paragraphs": [
+        "In order to replicate broadcast football, heavy research was required and I was provided the tools and technology to consume as much reference as possible when recreating these moments. The aim was shot-for-shot replicas of action that we’re all used to seeing on Sundays and that became our mantra. I implemented dozens of non-interactive cutscenes and presentation elements that added to the realism and sense of immersion throughout games. We also redesigned all of the broadcast UI graphics with inspiration from broadcast sports packages. In the end, there are moments in Madden that are hard to distinguish from reality."
+      ]
+    },
+    {
+      "heading": "PERSONALITY ANIMATION OWNER",
+      "paragraphs": [
+        "I also designed and delivered a new dance celebration feature that made use of my film study research. I collected about 200 reference clips of popular NFL celebrations and directed a day of motion capture with 4 actors to get all the animations. While the animations were cleaned up, I implemented a massive logic system that paired celebrations with players who perform them in moments of the game that warrant them. The result of the integrated broadcast graphics and the unique player celebrations was the best presentation in any Madden game, in my opinion."
+      ]
+    },
+    {
+      "heading": "HIGH FIDELITY FACE SCANS",
+      "paragraphs": [
+        "During Madden NFL 16 I was fortunate enough to participate in the face scan trips and was thrilled to have attended a dozen NFL camps and met hundreds of NFL players, coaches, and personnel."
+      ]
+    }
+  ],
+  "link": {
+    "href": "https://en.wikipedia.org/wiki/Madden_NFL_16",
+    "text": "Madden NFL 16"
+  },
+  "videos": [
+    "https://www.youtube-nocookie.com/embed/0VbE2yafP5I"
+  ],
+  "gallery": [
+    {
+      "src": "/img/2024/08/55f30596bd86ef21008b9b56.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2024/08/image_6.img_.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2024/08/2927550-madden16-reviewpromo-nologo.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2024/08/image_7.img_.webp",
+      "caption": ""
+    }
+  ]
+}

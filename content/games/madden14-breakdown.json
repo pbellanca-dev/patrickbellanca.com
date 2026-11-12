@@ -1,0 +1,54 @@
+{
+  "slug": "madden14-breakdown",
+  "title": "Madden NFL 14",
+  "role": "Associate Game Designer – PS3, X360 and PS4, XB1",
+  "hero": "/img/2024/08/8275635162275e6694208999c992b3f9e5d78e1a-1280x720-1.webp",
+  "intro": [
+    "<em>Madden NFL 14</em> (marketed as Madden NFL 25 to commemorate the 25th anniversary) was the year of Gen4 consoles, meaning we would ship the PlayStation 3 and Xbox 360 versions in the late summer and then ship the PlayStation 4 and Xbox One versions only a few months later. The differences between the games was significant and expectations were high for the new game versions. The Presentation team was expected to deliver eye-popping, next generation visuals."
+  ],
+  "sections": [
+    {
+      "heading": "CREATIVE PROBLEM SOLVING",
+      "paragraphs": [
+        "We had a limited animation budget but wanted to capture as much new content as possible so I devised a clever solution using camera angles to maximize our budget and present the new content in the best way possible. I tagged animations so that I could swap actors based on nuanced game logic and used fancy camera angles and tricks to mask undesirable parts of scenes. In the end, I delivered a dynamic presentation experience that made the best possible use of existing assets."
+      ]
+    },
+    {
+      "heading": "PRESENTATION UPDATES",
+      "paragraphs": [
+        "Nearly every presentation assets was remade for the next generation consoles to optimize for new hardware which meant that all of the presentation elements needed to be updated accordingly. This required detailed tracking of hundreds of assets’ status and systematically dividing the work and processing a large amount of work in a very short amount of time."
+      ]
+    },
+    {
+      "heading": "TECHNICAL GAME DESIGN",
+      "paragraphs": [
+        "I built complex logic trees to evaluate the game or season context, historic records, current game mode, and countless other moments with bespoke presentation sequence packages. The end result is a presentation experience that tells cohesive stories between plays and all along a Madden player’s journey."
+      ]
+    }
+  ],
+  "link": {
+    "href": "https://en.wikipedia.org/wiki/Madden_NFL_25_(2013_video_game)",
+    "text": "Madden NFL 14"
+  },
+  "videos": [
+    "https://www.youtube-nocookie.com/embed/R6RRF_sQnfA"
+  ],
+  "gallery": [
+    {
+      "src": "/img/2024/08/maxresdefault-4-1024x576.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2024/08/m25_brady_big-1.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2024/08/thumbnailer.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2024/08/MaddenNFL25_05-1024x576.webp",
+      "caption": ""
+    }
+  ]
+}

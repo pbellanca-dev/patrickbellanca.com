@@ -1,0 +1,54 @@
+{
+  "slug": "madden17-breakdown",
+  "title": "Madden NFL 17",
+  "role": "Game Designer – PlayStation 4, Xbox One",
+  "hero": "/img/2024/08/madden-nfl-17-button-fin-1642736852482.webp",
+  "intro": [
+    "<em>Madden NFL 1</em>7 was a memorable year for me because I shifted focus to work on Madden Ultimate Team where I could solve new problems and exercise a different set of design skills. I was pretty excited to join Ultimate Team to make a bigger impact on the gameplay and player experience sides of the game."
+  ],
+  "sections": [
+    {
+      "heading": "FEATURE OWNER &amp; DESIGNER",
+      "paragraphs": [
+        "My first assignment on Madden Ultimate Team was a team building strategy feature called Chemistry that encouraged players to experiment with different combinations of cards to discover powerful synergies that impact gameplay. Designing Chemistry involved redesigning the UI and UX, designing synergy content with gameplay impact, tuning and balance, and soliciting community feedback. Chemistry was a popular feature that players preferred to prior iterations."
+      ]
+    },
+    {
+      "heading": "HIGH-VALUE PROBLEM SOLVING",
+      "paragraphs": [
+        "I also addressed a revenue-impacting legacy uniform issue that was billed as <em>not fixable</em> due to a knowledge gap on the team. The issue was quickly and easily resolved thanks to my knowledge on the subject acquired in previous cycles with the presentation team. Re-introducing uniforms to MUT was extremely well received by players."
+      ]
+    },
+    {
+      "heading": "HIGH FIDELITY FACE SCANS",
+      "paragraphs": [
+        "Madden NFL 17 was also the last year that I participated in the head scan trips and am grateful to have attended a half dozen NFL camps that summer."
+      ]
+    }
+  ],
+  "link": {
+    "href": "https://www.ea.com/games/madden/madden-nfl-17",
+    "text": "Madden NFL 17"
+  },
+  "videos": [
+    "https://www.youtube-nocookie.com/embed/vX6BVrWusxQ"
+  ],
+  "gallery": [
+    {
+      "src": "/img/2024/08/Chem.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2024/08/2sddefault.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2024/08/sddefault-1.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2024/08/ea-sports-summer-series-likeness-madden-17-sportssummer-madden91.jpg.adapt_.crop16x9.1455w.webp",
+      "caption": ""
+    }
+  ]
+}

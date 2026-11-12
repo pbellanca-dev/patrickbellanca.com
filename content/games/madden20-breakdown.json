@@ -1,0 +1,48 @@
+{
+  "slug": "madden20-breakdown",
+  "title": "Madden NFL 20",
+  "role": "Game Designer – PlayStation 4, Xbox One",
+  "hero": "/img/2024/08/madden20.webp",
+  "intro": [
+    "<em>Madden NFL 20</em> was an exciting and busy project for me as I was transitioning from a role on Madden Ultimate Team to a role with the Madden experience team to tackle fresh UX challenges on new game features, including Face of the Franchise: QB1, Superstar KO, and a host of Accessibility features."
+  ],
+  "sections": [
+    {
+      "heading": "IMMERSIVE INTERACTIVE STORYTELLING",
+      "paragraphs": [
+        "I worked directly with our Creative Director to craft the design of an immersive, narrative gameplay experience to introduce players to the Face of the Franchise game mode. During this experience, players would need to create their character, choose a college, and experience gameplay, all while immersed in narrative, interstitial cut-scenes. It was critically important to make use of existing animation content, meaning this design was as much about resourcefulness and clever use of animations and camera angles as it was about creating an emotional connection between players and their character through interactive gameplay."
+      ]
+    },
+    {
+      "heading": "USER EXPERIENCE DESIGN",
+      "paragraphs": [
+        "Additionally, I contributed to the early UX and UI designs for Superstar KO player customization and the design of the new user onboarding experience wherein players make choices that define their gameplay experience and other accessibility settings. I departed EA Sports a few months into the development of Madden NFL 20 but was extremely pleased with positive sentiments received from fans after launch."
+      ]
+    }
+  ],
+  "link": {
+    "href": "https://www.ea.com/en-gb/games/madden-nfl/madden-nfl-20",
+    "text": "Madden NFL 20"
+  },
+  "videos": [
+    "https://www.youtube-nocookie.com/embed/eEqDOGliQj8"
+  ],
+  "gallery": [
+    {
+      "src": "/img/2024/08/wm-sc006-sh01-superstars-lineup-cam01-korenderframe-1567517663-scaled.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2024/08/3526942-madden20.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2024/08/madden-nfl-20-colleges-face-of-the-franchise_10lerx55gyyq7153zht2ks0lts.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2024/08/3526939-madden1.webp",
+      "caption": ""
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+[
+  {
+    "slug": "ragdoll-breakdown",
+    "title": "Ragdoll and Seek",
+    "years": "2026",
+    "role": "Solo Developer",
+    "cover": "/img/2024/07/RagdollAndSeek_VerticalCapsule.webp"
+  },
+  {
+    "slug": "ajs-anomaly-breakdown",
+    "title": "AJ’s Anomaly",
+    "years": "2026",
+    "role": "Lead Game Designer",
+    "cover": "/img/2024/07/AjsAnomaly_Vertical_Capsule1.webp"
+  },
+  {
+    "slug": "nfl-rivals-breakdown",
+    "title": "NFL Rivals",
+    "years": "2024 – 2025",
+    "role": "Lead Content Designer",
+    "cover": "/img/2025/10/NFL_Rivals-scaled.webp"
+  },
+  {
+    "slug": "fortnite-breakdown",
+    "title": "Fortnite Islands",
+    "years": "2023 – 2024",
+    "role": "Lead Game Designer",
+    "cover": "/img/2024/07/Fortn.webp"
+  },
+  {
+    "slug": "avnu-breakdown",
+    "title": "AVNU",
+    "years": "2022 – 2023",
+    "role": "Lead Game Designer",
+    "cover": "/img/2024/07/avnu-1.webp"
+  },
+  {
+    "slug": "monopoly-breakdown",
+    "title": "Monopoly GO!",
+    "years": "2020 – 2021",
+    "role": "Lead Game Designer",
+    "cover": "/img/2024/07/mono2.webp"
+  },
+  {
+    "slug": "madden20-breakdown",
+    "title": "Madden NFL 20",
+    "years": "2018 – 2019",
+    "role": "Game Designer",
+    "cover": "/img/2024/07/12902939-83c5-4088-a845-5159d69d9f05-AP_Madden_20_Cover.webp"
+  },
+  {
+    "slug": "madden19-breakdown",
+    "title": "Madden NFL 19",
+    "years": "2017 – 2018",
+    "role": "Game Designer",
+    "cover": "/img/2024/07/steelers-antonio-brown-madden-19-cover-photojpg-3.webp"
+  },
+  {
+    "slug": "madden18-breakdown",
+    "title": "Madden NFL 18",
+    "years": "2016 – 2017",
+    "role": "Game Designer",
+    "cover": "/img/2024/07/MV5BMjc3NTM4OGEtMWFjNy00OTU0LTkxYTEtZTkzZjE5MmYwNDA2XkEyXkFqcGdeQXVyMTk2OTAzNTI@._V1_.webp"
+  },
+  {
+    "slug": "madden17-breakdown",
+    "title": "Madden NFL 17",
+    "years": "2015 – 2016",
+    "role": "Game Designer",
+    "cover": "/img/2024/07/MV5BMDQ0ZDA5YTItZTM4NS00Mjk3LTg1YmItODI2YmIzODRiZTgyXkEyXkFqcGdeQXVyMTk2OTAzNTI@._V1_.webp"
+  },
+  {
+    "slug": "madden16-breakdown",
+    "title": "Madden NFL 16",
+    "years": "2014 – 2015",
+    "role": "Game Designer",
+    "cover": "/img/2024/07/m16w-3.webp"
+  },
+  {
+    "slug": "madden15-breakdown",
+    "title": "Madden NFL 15",
+    "years": "2013 – 2014",
+    "role": "Associate Game Designer",
+    "cover": "/img/2024/07/MV5BMDhkNjc2OWQtNjUzOS00NDQ5LWFiM2YtMjQ4MGRjYWYxYmZiXkEyXkFqcGdeQXVyMTk2OTAzNTI@._V1_FMjpg_UX1000_.webp"
+  },
+  {
+    "slug": "madden14-breakdown",
+    "title": "Madden NFL 14",
+    "years": "2012 – 2013",
+    "role": "Associate Game Designer",
+    "cover": "/img/2024/07/Madden_NFL_25_Next-Gen.webp"
+  },
+  {
+    "slug": "madden13-breakdown",
+    "title": "Madden NFL 13",
+    "years": "2011 – 2012",
+    "role": "Assistant Game Designer",
+    "cover": "/img/2024/07/Madden_NFL_13_cover.webp"
+  },
+  {
+    "slug": "madden12-breakdown",
+    "title": "Madden NFL 12",
+    "years": "2010 – 2011",
+    "role": "Assistant Game Designer",
+    "cover": "/img/2024/07/12.webp"
+  },
+  {
+    "slug": "madden11-breakdown",
+    "title": "Madden NFL 11",
+    "years": "2009 – 2010",
+    "role": "Senior QA",
+    "cover": "/img/2024/07/71AfEligLcL._AC_UF10001000_QL80_.webp"
+  },
+  {
+    "slug": "madden-nfl-arcade",
+    "title": "Madden NFL Arcade",
+    "years": "2009 – 2010",
+    "role": "Senior QA",
+    "cover": "/img/2024/07/6-1-131256-52.webp"
+  },
+  {
+    "slug": "madden10-breakdown",
+    "title": "Madden NFL 10",
+    "years": "2008 – 2009",
+    "role": "Automation Analyst",
+    "cover": "/img/2024/07/61kTrQN3eL._AC_UF10001000_QL80_.webp"
+  },
+  {
+    "slug": "tiger09-breakdown",
+    "title": "Tiger Woods 09",
+    "years": "2007 – 2008",
+    "role": "Development Tester",
+    "cover": "/img/2024/07/maxresdefault-3.webp"
+  }
+]

@@ -1,0 +1,48 @@
+{
+  "slug": "madden11-breakdown",
+  "title": "Madden NFL 11 Wii",
+  "role": "Senior QA – Nintendo Wii",
+  "hero": "/img/2024/08/maxresdefault-6.webp",
+  "intro": [
+    "<em>Madden NFL 11 Wii</em> was the first year that I was viewed as a full time designer, even though my title didn’t match yet. Working with two senior designers, I took ownership of portions of the Franchise mode user experience, sound design and implementation, roster-related production tasks, and more."
+  ],
+  "sections": [
+    {
+      "heading": "FRANCHISE MODE UX",
+      "paragraphs": [
+        "Madden NFL 11 Wii was going to get a major overhaul to Franchise mode to make better use of the hardware and to distance itself from its PlayStation 2 roots. I was in charge of mapping out the user experience and streamlining, removing as many UI screens as possible as a measure to reduce scope. Over 50% of the screens were eliminated by a sharp and sensible redesign that maintained 100% of the functionality. Additionally, I worked directly with cross-functional departments to develop art, audio, and marketing assets."
+      ]
+    },
+    {
+      "heading": "DESIGNER IN TRAINING",
+      "paragraphs": [
+        "I am thankful for the coaching and mentoring that my team provided me so that I could deliver several Madden NFL 11 Wii features. I owned implementing sound and commentary assets, building dozens of camera animations, data updates (schedules, player data, rosters, etc), designing gameplay abilities content, designing UI screen and UX flows, and more. I was even invited to media and PR events to do on-camera interviews about Madden NFL 11 Wii."
+      ]
+    }
+  ],
+  "link": {
+    "href": "https://en.wikipedia.org/wiki/Madden_NFL_11",
+    "text": "Madden NFL 11"
+  },
+  "videos": [
+    "https://www.youtube-nocookie.com/embed/GxferX7fWL0"
+  ],
+  "gallery": [
+    {
+      "src": "/img/2024/08/matthew-eng-madden11-wii-franchise-degradation-base.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2024/08/matthew-eng-madden11-wii-franchise-degradation-deprecated.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2024/08/maddenwii610.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2024/08/screen_MaddenNFL11_06-640x360-1.webp",
+      "caption": ""
+    }
+  ]
+}

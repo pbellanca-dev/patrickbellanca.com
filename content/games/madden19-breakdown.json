@@ -1,0 +1,54 @@
+{
+  "slug": "madden19-breakdown",
+  "title": "Madden NFL 19",
+  "role": "Game Designer – PlayStation 4, Xbox One",
+  "hero": "/img/2024/08/Madden_19.webp",
+  "intro": [
+    "<em>Madden NFL 19</em> presented new opportunities to design multiplayer online gameplay content to extend the MUT Squads mode as well as an innovative new product offering for the Competitive Gaming Division."
+  ],
+  "sections": [
+    {
+      "heading": "ITERATION &amp; CONTENT DESIGN",
+      "paragraphs": [
+        "After the tremendous reception of MUT Squads in Madden 18, I knew I was facing an incredible opportunity to push the fun further with new ways to play. I worked with another game designer to invent and implement a series of game challenges for players to compete versus the CPU for increasingly rare and valuable rewards. It was important to me to support custom matchmaking in response to repetitive feedback when engaging with community members."
+      ]
+    },
+    {
+      "heading": "INNOVATIVE DIGITAL PROGRAM",
+      "paragraphs": [
+        "Meanwhile, I worked extremely hard to conceptualize and design a brand new digital program for the Competitive Gaming Division, called The Gameday Program. This feature required me to pitch a concept to EA Executives and Senior Leaders, including the Finance &amp; Legal teams before development began. This innovative program put competitive Madden players at the forefront of Madden by putting them into the game as virtual Head Coaches. I fought to get premium menu placement for The Gameday Program to match our commitment to the competitive community. This program was lauded for it’s originality and seamless execution."
+      ]
+    },
+    {
+      "heading": "USER INTERFACE DESIGN",
+      "paragraphs": [
+        "Both of these large features required designing a dozen or more new UI screens and the UX flows between them and gameplay."
+      ]
+    }
+  ],
+  "link": {
+    "href": "https://en.wikipedia.org/wiki/Madden_NFL_19",
+    "text": "Madden NFL 19"
+  },
+  "videos": [
+    "https://www.youtube-nocookie.com/embed/Js04hvdVUA8"
+  ],
+  "gallery": [
+    {
+      "src": "/img/2024/08/M19_MUT_Challenges.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2024/08/vlcsnap_2018_08_09_18h09m16s347.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2024/08/cgd-tab-in-game-1.png.adapt_.crop16x9.1455w-1.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2024/08/skimbo-1.jpg.adapt_.crop16x9.1455w-1.webp",
+      "caption": ""
+    }
+  ]
+}

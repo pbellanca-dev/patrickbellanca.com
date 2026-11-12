@@ -1,0 +1,56 @@
+{
+  "slug": "ragdoll-breakdown",
+  "title": "Ragdoll and Seek",
+  "role": "Solo Developer – Unreal Engine 5",
+  "hero": "/img/2026/10/RagdollAndSeek_Screen1.webp",
+  "intro": [
+    "<em>Ragdoll and Seek</em> is an online multiplayer hide-and-seek game for Steam, built in Unreal Engine 5. Hiders play as ragdoll toys and try to blend into their surroundings. The Seeker hunts them with a thermal scanner while Hiders heat makes them easier to see. I built it solo in under three months."
+  ],
+  "sections": [
+    {
+      "heading": "GAME DESIGN &amp; CORE LOOP",
+      "paragraphs": [
+        "I designed and built the whole game: the rules, gameplay, levels, UI, and the systems that connect them. The game has one idea. Hiders move to stay cool and hide when a seeker is near. The Seeker’s thermal scanner reveals movement and body heat, so every action a hider takes has risk and reward. Hider players can ragdoll to flop into a convincing pose to successfully hide among the toys. The game contains 5 playable levels that are different enough that hiding and seeking have to be learned again in each one. I also ran the project’s balance and design passes after playtests to dial in the feature set, user experience, and game balance."
+      ]
+    },
+    {
+      "heading": "BUILDING A MULTIPLAYER GAME ALONE, FAST",
+      "paragraphs": [
+        "Networked play was a requirement from the start, and I built the game on Unreal’s replication and Steam sessions. I used AI-assisted tools throughout, including Claude Code for C++ gameplay work and MCP tools for editor automation. With that help I could handle systems that would normally need several specialists, including networking, animation, tech art, UI, level tooling, and more. Faster tools let me spend more of the schedule on the driving the creative vision while still approving every change. I am self-publishing this game on Steam under my newly formed LLC, Lake Effect Interactive."
+      ]
+    },
+    {
+      "heading": "SHIPPING &amp; LIVE-READINESS",
+      "paragraphs": [
+        "Shipping took nearly as much work as building. I set up separate test, demo, and ship builds through Steamworks, packaged and playtested over a dozen build versions, added localization into multiple languages, and made the store-page assets myself. The game went from an idea to a ship-ready product with a marketing package in under three months, with no team."
+      ]
+    }
+  ],
+  "link": {
+    "href": "https://store.steampowered.com/app/5113950/?snr=1_5_9__205",
+    "text": "Ragdoll and Seek (Steam)"
+  },
+  "videos": [],
+  "gallery": [
+    {
+      "src": "/img/2026/10/v13_029.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2026/10/ToyStore_Seeker_05_HUD-scaled.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2026/10/Underground_Hider_05_HUD-scaled.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2026/10/ToyStore_Seeker_04-scaled.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2026/10/Backrooms_Hider_03-scaled.webp",
+      "caption": ""
+    }
+  ]
+}

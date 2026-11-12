@@ -1,0 +1,56 @@
+{
+  "slug": "ajs-anomaly-breakdown",
+  "title": "AJ’s Anomaly",
+  "role": "Lead Designer/Developer – Unreal Engine 5",
+  "hero": "/img/2026/10/AjsAnomaly-Main-Capsule1.webp",
+  "intro": [
+    "<em>AJ’s Anomaly</em> is a short, single player, spot-the-difference horror game for Steam, built in Unreal Engine 5. Developed with one other person, this game features interactive puzzles, jump scares, and narrative sequences that tell the story of a fashion designer overcoming her trauma through anomaly therapy."
+  ],
+  "sections": [
+    {
+      "heading": "RAPID PROTOTYPING AND FINDING THE FUN",
+      "paragraphs": [
+        "I spent a short time ramping up in Unreal Blueprints before switching to prototyping gameplay exclusively in C++, without AI-tooling.  Programming gameplay is a first for me but I took a course and was able to acclimate quickly and have been programming full-time since. I created about a dozen gameplay prototypes in first- and third-person, with systems like combat, AI-driven enemies, pickups, interactive maps, dialog, cinematics, data structures, and more before locking down the core feature set that we would move forward into production."
+      ]
+    },
+    {
+      "heading": "POLISHING AND FEEDBACK LOOPS",
+      "paragraphs": [
+        "With the gameplay loop and content pipelines in place, we shifted some focus to polishing the UX/UI, character fidelity, and adding meta gameplay to facilitate a deeper narrative and build out a more complete player experience. Valuable feedback from early testers helped shape the pacing and narrative structure seen in the final version."
+      ]
+    },
+    {
+      "heading": "CO-DEVELOPING GAMES ON A TEAM OF 2",
+      "paragraphs": [
+        "My colleague and I divided development roles and responsibilities nearly evenly.  I am responsible for gameplay programming, game design, and UI, and he is responsible for characters, sound, and narrative elements. We worked from a shared Git repo, tasked ourselves in Trello for visibility, and met on a regular basis to discuss priorities, discoveries, and more.  We built this game remotely in about 3 months."
+      ]
+    }
+  ],
+  "link": {
+    "href": "https://store.steampowered.com/app/4877120/?snr=1_5_9__205",
+    "text": "AJ’s Anomaly (Steam)"
+  },
+  "videos": [],
+  "gallery": [
+    {
+      "src": "/img/2026/10/Screenshot-9.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2026/10/Screenshot-29.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2026/10/Anom.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2026/10/Screenshot-23.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2026/10/Screenshot-31.webp",
+      "caption": ""
+    }
+  ]
+}

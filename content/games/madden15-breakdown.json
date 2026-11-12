@@ -1,0 +1,54 @@
+{
+  "slug": "madden15-breakdown",
+  "title": "Madden NFL 15",
+  "role": "Associate Game Designer – PlayStation 4, Xbox One",
+  "hero": "/img/2024/08/maxresdefault-3.webp",
+  "intro": [
+    "<em>Madden NFL 15</em> was my opportunity to lead the Madden Presentation team after a building up the skills, knowledge, and trust with leadership over the past few development cycles. Madden 15 was the first full development cycle with new, more powerful console hardware and we were pretty excited to see what they were capable of."
+  ],
+  "sections": [
+    {
+      "heading": "STADIUM REALISM",
+      "paragraphs": [
+        "The largest feature that the Presentation team would tackle was a stadium feature called The Living World that aimed to bring new life and realism to the crowd by taking advantage of the new hardware capabilities. I researched dozens of NFL games to accurately implement where people stand and how they move around each of the 32 uniquely designed stadiums, sidelines, and concourses as well as the triggers that cause them to relocate. I captured reference for crowd fans and various sideline personnel (camera and audio people, refs, coaches, etc.) before directing a motion capture session to record new animation content. The feature turned out great and is still very much a part of Madden (and now NCAA College Football) games."
+      ]
+    },
+    {
+      "heading": "ATTENTION TO DETAIL",
+      "paragraphs": [
+        "During the dev cycle, I also took it upon myself to reorganize and unify a mess of data files that defined NFL uniform parts and combinations because it bothered me as a player and I was capable of addressing it. Thankfully, the knowledge that I gained doing this would benefit me a couple years later in a completely different area of the Madden game."
+      ]
+    },
+    {
+      "heading": "TRAINER &amp; MENTOR",
+      "paragraphs": [
+        "As the leader of the Presentation team, I trained new designers in the space because of my ability to communicate clearly and demystify complex systems and processes."
+      ]
+    }
+  ],
+  "link": {
+    "href": "https://en.wikipedia.org/wiki/Madden_NFL_15",
+    "text": "Madden NFL 15"
+  },
+  "videos": [
+    "https://www.youtube-nocookie.com/embed/nUiBJy150rg"
+  ],
+  "gallery": [
+    {
+      "src": "/img/2024/08/1405632744-media.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2024/08/29627.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2024/08/madden15.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2024/08/fbd813c780175b96b90ab1fdfc122634.webp",
+      "caption": ""
+    }
+  ]
+}

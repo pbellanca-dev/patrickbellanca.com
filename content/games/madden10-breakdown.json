@@ -1,0 +1,48 @@
+{
+  "slug": "madden10-breakdown",
+  "title": "Madden NFL 10 Wii",
+  "role": "Automation Analyst – Nintendo Wii",
+  "hero": "/img/2024/08/main.webp",
+  "intro": [
+    "<em>Madden NFL 10 Wii </em>marked the year I finally joined the Madden team, after having played and followed the game every year since its inaugural release on the SNES console in 1991. Needless to say, I was beside myself with delight to experience my dream becoming reality. I played the role of Automation Analyst on this team and had significant QA duties but was provided opportunities to own and deliver various design tasks along the way to assist our small dev team."
+  ],
+  "sections": [
+    {
+      "heading": "CALL YOUR SHOTS 2.0",
+      "paragraphs": [
+        "The biggest feature that I delivered on Madden NFL 10 Wii was an iteration to an existing gameplay feature called, Call Your Shots, that allowed players to use their Wii Remote to point at the screen and draw new plays and make other adjustments at the line of scrimmage. My update focused on input accuracy thanks to the more precise Wii Motion Plus controller as well as refreshed visuals to align with the game’s new art style. I am very proud of the result and learned several important design lessons throughout development."
+      ]
+    },
+    {
+      "heading": "DESIGN OWNERSHIP",
+      "paragraphs": [
+        "In addition to QA duties and the Call Your Shots 2.0 feature, I was given ownership of several data-related game updates that were made with painstaking attention to detail. Included are all of the player and roster data, season schedule data, and post-launch game data updates, akin to what was being produced for the Madden NFL 10 game. Execution of these tasks required collaboration with senior designers and producers that gave me good exposure to a group who would lobby for me to join them one year later."
+      ]
+    }
+  ],
+  "link": {
+    "href": "https://www.nintendolife.com/reviews/2009/09/madden_nfl_10_wii",
+    "text": "Madden NFL 10 Wii"
+  },
+  "videos": [
+    "https://www.youtube-nocookie.com/embed/X1CWN6YI090"
+  ],
+  "gallery": [
+    {
+      "src": "/img/2024/08/1832.bills_5F00_to.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2024/08/B001UU1WRE.01.lg_.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2024/08/Screenshot-2024-08-12-123119.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2024/08/large.webp",
+      "caption": ""
+    }
+  ]
+}

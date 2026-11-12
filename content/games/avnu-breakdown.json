@@ -1,0 +1,54 @@
+{
+  "slug": "avnu-breakdown",
+  "title": "AVNU: Where Music Meets",
+  "role": "Creative Lead / Lead Game Designer – Roblox",
+  "hero": "/img/2024/08/cover.webp",
+  "intro": [
+    "<em>AVNU: Where Music Meets</em> is an always online, multiplayer, rhythm game featuring hit songs by world renown Sony Music artists built as a live operated platform with ‘artist takeover’ live events on the Roblox platform."
+  ],
+  "sections": [
+    {
+      "heading": "CREATIVE VISION &amp; DIRECTION",
+      "paragraphs": [
+        "I owned and led the creative vision of the product, including core gameplay, user experiences, characters, level design, implementation of game mechanics and progression systems, game economy, and more. I was closely involved in establishing a game’s concept alongside Sony Music executives and translated the overall vision into a creative framework supported by detailed game design documents."
+      ]
+    },
+    {
+      "heading": "RAPID PROTOTYPING",
+      "paragraphs": [
+        "Development began with a couple sprints of rapid prototyping to find the fun and to establish a core loop and a set of basic game mechanics. One of the main goals for the project was to create a live-operated social space for music fans to meet and interact in a world devoted to their favorite music artists. Roblox is a social platform and users expect a certain level of social interaction and engagement in each experience. When designing the core feature set for AVNU, there were three social elements that I wanted to make sure were represented – surfacing players’ musical identity, giving players ways to personalize with relevant fashion choices, and creating a space for players to show off and admire one another."
+      ]
+    },
+    {
+      "heading": "LIVE EVENTS &amp; OPERATIONS",
+      "paragraphs": [
+        "After launching AVNU: Where Music Meets, we hosted 5 increasingly successful live events with licensed Sony Music artists that drove record engagement and music consumption and was considered a huge success overall. Each event increased our understanding of artist performance potential, user expectations, economy and engagement metrics, and more. With this data, we were able to constantly tune and improve the user experience. AVNU: Where Music Meets is still being actively developed with new Live Events and content releases."
+      ]
+    }
+  ],
+  "link": {
+    "href": "http://rblx.games/12108137135",
+    "text": "AVNU: Where Music Meets – Roblox"
+  },
+  "videos": [
+    "https://www.youtube-nocookie.com/embed/vYc70lA9VUo"
+  ],
+  "gallery": [
+    {
+      "src": "/img/2024/08/club.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2024/08/pets.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2024/08/songs.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2024/08/fashion.webp",
+      "caption": ""
+    }
+  ]
+}

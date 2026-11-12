@@ -1,0 +1,48 @@
+{
+  "slug": "fortnite-breakdown",
+  "title": "Fortnite Islands",
+  "role": "Creative Lead / Lead Game Designer – UEFN",
+  "hero": "/img/2024/08/Capturethemusic_1920x10805.webp",
+  "intro": [
+    "At Sony Immersive Music Studios, I was presented an exciting opportunity to develop games for Fortnite using their new development engine, the Unreal Editor for Fortnite. My team had early access to learn and experiment and operated like an R&amp;D unit, focused on understanding UEFN and applying those learning to a series of rapidly developed island experiments. By the public release of UEFN, we had built a team ready to build and deploy our own Fortnite islands."
+  ],
+  "sections": [
+    {
+      "heading": "CREATIVE VISION &amp; DIRECTION",
+      "paragraphs": [
+        "We developed and launched 4 games using UEFN and had another 3 in development when I left. Each game offers players a different gameplay experience along with a common element – immersive music integration. I owned and led the creative vision of most of these products, including core gameplay experiences, UI/UX, level design, implementation of game mechanics and progression systems, game updates, and more. I was responsible for establishing each game’s concept and translating the overall vision into detailed game design documents."
+      ]
+    },
+    {
+      "heading": "WORLD CLASS LICENSED IP",
+      "paragraphs": [
+        "Each product presented unique challenges but our collective ability improved with each release and update. The challenge with each game was inventing a new experience that utilized music in a refreshingly clever and always interactive way and then marrying that the ever-evolving capabilities of the UEFN product. To that end, I spent considerable time educating myself about Epic’s roadmap of upcoming UEFN features and designing cutting edge experiences."
+      ]
+    }
+  ],
+  "link": {
+    "href": "https://www.fortnite.com/@sony-ims?lang=en-US",
+    "text": "Fortnite Islands by Sony Immersive Music Studios"
+  },
+  "videos": [
+    "/video/fortnite-islands.mp4"
+  ],
+  "gallery": [
+    {
+      "src": "/img/2024/08/Screenshot-2024-08-02-Capture-The-Music-NITEWAVE-Magnopus-1.webp",
+      "caption": "Nitewave"
+    },
+    {
+      "src": "/img/2024/08/snapshot2.webp",
+      "caption": "Stage Siege (10v10)"
+    },
+    {
+      "src": "/img/2024/08/iniko.webp",
+      "caption": "Jericho Parkour Race"
+    },
+    {
+      "src": "/img/2024/08/con8.webp",
+      "caption": "CON8"
+    }
+  ]
+}

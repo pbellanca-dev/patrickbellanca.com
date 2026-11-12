@@ -1,0 +1,54 @@
+{
+  "slug": "madden13-breakdown",
+  "title": "Madden NFL 13",
+  "role": "Associate Game Designer – PlayStation 3, Xbox 360",
+  "hero": "/img/2024/08/m13.webp",
+  "intro": [
+    "<em>Madden NFL 13</em> was a defining year in my career as a leadership change impacted the design department. I found myself with a prime opportunity to own not just one, but multiple large features and to demonstrate how much value I could add. Thankfully, the Madden NFL 13 Creative Director requested many presentation-heavy features, including a visual commentary crew, a suite of new presentation moments and visuals, and a new narrative-driven franchise mode."
+  ],
+  "sections": [
+    {
+      "heading": "VISUAL COMMENTARY CREW",
+      "paragraphs": [
+        "CBS co-stars, Jim Nantz and Phil Simms, were announced as Madden NFL’s exciting new commentary crew who would bring authenticity, insight, and deeper broadcast immersion to the game. For Presentation, a big part of that involved putting Jim and Phil on-screen at the right times and from the right locations since stadiums are unique. I led the design and implementation of dozens of complex logic trees and visual sequences (animations, cameras, banner graphics) so that Jim and Phil welcomed us to each stadium before the game, sent us to halftime, and then wrapped up each game. The result was an authentic and recognizable stadium presentation experience that fans appreciated."
+      ]
+    },
+    {
+      "heading": "DYNAMIC PREGAME INTRODUCTIONS",
+      "paragraphs": [
+        "As part of pregame presentation, I designed, implemented, and owned a pregame sequence that introduced the stars of the game in a custom environment with custom animations, music, lighting, banners, and precise timings. Producing the feature required cross-functional collaboration with several art departments and pushed the technology at the time to its limits. This entire sequence led seamlessly into the stadium introduction and Jim and Phil’s first on-screen moment. The result was full of personality and emotion and captivated the audience every time. I recall a fun development moment when the entire pregame sequence was ready to demo and a very large group gathered around my desk with the volume loud, standing on desks to see my screens on repeat for about an hour."
+      ]
+    },
+    {
+      "heading": "PR &amp; MEDIA EVENTS",
+      "paragraphs": [
+        "The head of Madden’s PR team selected me to represent EA Sports and Madden NFL 25 in several interviews with press and media outlets. Among those were an invitation to Capitol Hill to speak before the Congressional Caucus for Competitiveness in Entertainment Technology (E-TECH), an appearance on the gaming television show, X-Play, and co-hosting the Madden NFL Latin America Launch Event with Pittsburgh Steelers Hall of Famer, Jerome Bettis."
+      ]
+    }
+  ],
+  "link": {
+    "href": "https://en.wikipedia.org/wiki/Madden_NFL_13",
+    "text": "Madden NFL 13"
+  },
+  "videos": [
+    "https://www.youtube-nocookie.com/embed/birCB4Vxs6g"
+  ],
+  "gallery": [
+    {
+      "src": "/img/2024/08/commentary.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2024/08/gameintro.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2024/08/pregame.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2024/08/maxresdefault-5.webp",
+      "caption": ""
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "madden-nfl-arcade",
+  "title": "Madden NFL Arcade",
+  "role": "Senior QA – Xbox Live Arcade",
+  "hero": "/img/2024/08/Arcade.webp",
+  "intro": [
+    "<em>Madden NFL Arcade </em>was an exciting project that emerged during the Madden NFL 11 Wii development cycle. The decision was made to pause development of the Wii project for 2 months to develop and launch Madden NFL Arcade on the Xbox Live Arcade before returning to complete and launch the Madden NFL 11 Wii. Madden NFL Arcade provided me additional opportunities to showcase my design capabilities. My role was that of a full time Assistant Designer and I had very few traditional Senior QA responsibilities."
+  ],
+  "sections": [
+    {
+      "heading": "ARCADE GAMEPLAY FEEL",
+      "paragraphs": [
+        "Our Lead Game Designer wanted Madden NFL Arcade’s gameplay to feel distinct from other Madden titles with big action, momentum changing plays, and over-the-top power ups like you would find in Super Mario Kart. I worked with a Senior Game Designer to design a fast, fun, and competitive version of 5-on-5 football gameplay with simplified play calling, big splashy on-screen graphics, and a dozen or more game-changing power ups. Madden NFL Arcade successfully delivered a unique gameplay experience that has not been replicated."
+      ]
+    },
+    {
+      "heading": "DESIGN OWNERSHIP",
+      "paragraphs": [
+        "I was asked to own the design and delivery of a list of small scope / high value features for Madden NFL Arcade, including game and replay cameras, roster data and post-launch updates, game audio, community forum moderation, and more. These areas of ownership provided me opportunities to learn new workflows and pipelines while networking with senior developers and team leaders that would pay dividends for the next 10 years."
+      ]
+    }
+  ],
+  "link": {
+    "href": "https://www.ign.com/games/madden-nfl-arcade",
+    "text": "Madden NFL Arcade"
+  },
+  "videos": [
+    "https://www.youtube-nocookie.com/embed/gjBqFUzyu2Q"
+  ],
+  "gallery": [
+    {
+      "src": "/img/2024/08/maddennflarcade_bilder_194917b.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2024/08/1060739-976859_20091013_002.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2024/08/madden-nfl-arcade-20091130051539999-3070253.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2024/08/gameplaymaxresdefault.webp",
+      "caption": ""
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "slug": "nfl-rivals-breakdown",
+  "title": "NFL Rivals",
+  "role": "Lead Content Designer – iOS, Android",
+  "hero": "/img/2025/10/NFL_Rivals-scaled.webp",
+  "intro": [
+    "<em>NFL Rivals</em> is a free to play mobile game built on Web3 technology and based on the NFL.  The product launched into market in 2023, backed by Mythical Games’ Mythos token, and quickly grew into one of the most popular NFL games on the mobile market.  I joined the NFL Rivals team at Mythical Games as a Lead Content Designer to contribute to the growth of the game though the creation of authentic and engaging player experiences and timely content releases."
+  ],
+  "sections": [
+    {
+      "heading": "CONTENT OWNERSHIP",
+      "paragraphs": [
+        "I joined the team to own the creation and delivery of live operated content releases on a weekly and monthly cadence to drive player engagement, retention, and monetization in an NFL-branded mobile football game. I worked directly under the studio GM and alongside a team of PMs to align all content releases with the needs of the business. Content releases required heavy collaboration with the core development team in Brighton, UK for client-side updates and the US-based Live Ops team for server-side updates that were made on a daily basis."
+      ]
+    },
+    {
+      "heading": "BRAND AUTHENTICITY",
+      "paragraphs": [
+        "It is extremely important when working with an NFL-branded product to design content that genuinely represents the league, its players, and its culture, staying true to the values of competition, sportsmanship, and community. I designed content experiences that connect players with their favorite teams, athletes, and memories of historic NFL moments. The combination of authentic NFL branding, exciting player experiences, and approachable gameplay content are at the core of NFL Rivals."
+      ]
+    },
+    {
+      "heading": "PLAYER EXPERIENCE",
+      "paragraphs": [
+        "I had the opportunity to contribute heavily to the core design of NFL Rivals during the off-cycle to create a host of new player experiences aimed to create a most accessible, player-friendly, and engaging core loop. This work included delivering solutions to identified opportunities in the UI/UX and Systems design spaces."
+      ]
+    }
+  ],
+  "link": {
+    "href": "https://nfl.rivals.game/",
+    "text": "NFL Rivals"
+  },
+  "videos": [
+    "https://www.youtube-nocookie.com/embed/f9ixnt0oQuw"
+  ],
+  "gallery": [
+    {
+      "src": "/img/2025/10/nfl-rivals-review-6-in-game-screenshot-1024x576-1.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2025/10/nfl-rivals-review-7-gameplay-screenshot-1024x576-1.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2025/10/nfl-rivals-review-2-digital-collectibles-1024x576-1.webp",
+      "caption": ""
+    },
+    {
+      "src": "/img/2025/10/nfl-rivals-review-3-team-roster-1024x576-1.webp",
+      "caption": ""
+    }
+  ]
+}
