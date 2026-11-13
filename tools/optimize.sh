@@ -8,4 +8,4 @@ find originals -type f ! -name '*.pdf' | while read -r f; do
   [ -f "$out" ] || ffmpeg -nostdin -loglevel error -y -i "$f" -vf "scale='min(1600,iw)':-2" -frames:v 1 -c:v libwebp -quality 80 "$out" || echo "FAIL $f"
   [ -f "$th" ] || ffmpeg -nostdin -loglevel error -y -i "$f" -vf "scale='min(640,iw)':-2" -frames:v 1 -c:v libwebp -quality 78 "$th" || echo "FAILTHUMB $f"
 done
-mkdir -p docs/files && cp originals/2026/03/Patrick-Bellanca-Resume.pdf docs/files/
+mkdir -p docs/files && cp originals/2026/11/Patrick-Bellanca-Resume.pdf docs/files/
