@@ -94,13 +94,20 @@ The WordPress site is Porkbun's **Cloud for WordPress** hosting ($120/year), bou
 account as the domain. Cancelling that hosting product does **not** close the Porkbun account or the
 domain registration — those are separate products in the same account.
 
-Do these in order; only cancel when every box is ticked.
+**Status: complete (12 Nov 2026).** The site is live on GitHub Pages and the WordPress hosting is cancelled.
 
 - [x] **Back up WordPress first**: content export and media list are in `wordpress\`, and all 216 media files are in `wordpress\media\` (git-ignored).
-- [ ] All pages migrated: Home (19 game cards), 19 game breakdowns, Resume (+ PDF), About, Achievements. *(Done in this folder.)*
-- [ ] New site live on `https://patrickbellanca.com` with the padlock (HTTPS), and `www` redirects to it.
-- [ ] Opened it on your phone and it looks right.
-- [ ] Sent yourself a test email to your `@patrickbellanca.com` address (if you use one) and it still arrives.
-- [ ] Cancel the hosting in Porkbun: open the *Cloud for WordPress* product for patrickbellanca.com (the "Cloud for WordPress" link you see in your Porkbun account) → turn off auto-renew / cancel. Only cancel the *Cloud for WordPress* product — not the domain. If unsure which button does what, Porkbun support (1-855-767-5286, chat, or support@porkbun.com) can confirm before you click.
-- [ ] Afterwards, re-check DNS: cancelling hosting must not have put the WordPress A records back or removed the GitHub ones (Claude can check this).
-- [ ] Make sure the **Porkbun domain registration** itself stays on auto-renew — that's separate from the hosting and you still need it.
+- [x] All pages migrated: Home (19 game cards), 19 game breakdowns, Resume (+ PDF), About, Achievements, plus the Fortnite gameplay video.
+- [x] New site live on `https://patrickbellanca.com` with the padlock (HTTPS); `http://` and `www` redirect to it. Certificate renews automatically.
+- [x] Opened it on a phone and it looks right.
+- [x] Email forwarding still works; MX, SPF, DKIM and DMARC records unchanged.
+- [x] Cancelled Porkbun's *Cloud for WordPress* hosting (not the domain).
+- [x] Re-checked DNS after cancelling: GitHub A records and `www` CNAME still in place; old `_acme-challenge` records are gone.
+- [x] Porkbun domain registration on auto-renew; registered through 18 July 2027.
+
+### If the site ever shows Porkbun's "Coming Soon" page
+
+During the switch, Porkbun added an **ALIAS** record (host blank → `pixie.porkbun.com`, which serves a
+"Coming Soon" page) that replaced the GitHub A records. If that happens again: in Porkbun → DNS Records,
+delete the `pixie.porkbun.com` ALIAS (and any A records for `207.207.210.107` / `.229`), then re-add the
+four GitHub A records above. If it keeps coming back, ask Porkbun support what is still attached to the domain.
