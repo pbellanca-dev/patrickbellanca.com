@@ -41,6 +41,9 @@ function layout({ title, description, active, body, pathName, image = '/img/og/o
 <meta property="og:site_name" content="${site.name}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0b0d12">
+<!-- The site is already dark: ask browser dark modes and Dark Reader not to re-darken it. -->
+<meta name="color-scheme" content="dark">
+<meta name="darkreader-lock">
 <link rel="icon" href="/favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
