@@ -25,6 +25,19 @@ Replaces the WordPress.com site so the $120/year plan can be cancelled.
 
 Adding a game: add a card to `content/games.json` (order = order on the home page), copy one of the
 `content/games/*.json` files to `<slug>.json` and edit it. Images are referenced as `/img/…/name.webp`.
+Also bump the shipped-games count in the home headline and description (`tools/build.mjs`) and on the
+preview card (`tools/og-card.html`), then run `sh tools/og.sh`.
+
+Image tips:
+- Home-page covers are cropped to **3:4** (e.g. 600×800). A different shape gets its edges trimmed, and
+  any border baked into the image shows inside the card.
+- A local trailer goes in `docs/video/<name>.mp4` (with a `<name>.webp` poster) and is listed in the
+  game's `videos`. Games without a video use their first gallery image as the big tile.
+- Portrait: `originals/2026/11/portrait-2026.jpg` → header (`portrait-2026-96.webp`), About page and
+  preview card. After replacing it, delete the old `docs/img/2026/11/portrait-2026*.webp` files, run
+  `optimize.sh`, remake the 96 px header copy, then run `og.sh`.
+- Resume PDF: replace `originals/2026/11/Patrick-Bellanca-Resume.pdf` and run `optimize.sh` (it copies it
+  to `docs/files/`). Keep the Resume page text in `content/pages/resume.html` in step, without the phone number.
 
 Preview locally: `npx http-server@14.1.1 docs -p 8090` then open http://localhost:8090.
 
@@ -106,6 +119,15 @@ domain registration — those are separate products in the same account.
 - [x] Cancelled Porkbun's *Cloud for WordPress* hosting (not the domain).
 - [x] Re-checked DNS after cancelling: GitHub A records and `www` CNAME still in place; old `_acme-challenge` records are gone.
 - [x] Porkbun domain registration on auto-renew; registered through 18 July 2027.
+
+## Updates after launch
+
+- [x] **13 Nov 2026, polish:** full-width home headline; ambient glow on the home page; link-preview images (site card + one per game).
+- [x] **13 Nov 2026, wording:** headline is now "20 shipped games, from Madden NFL to Monopoly GO! to my own indie titles."; About page says 18+ years; three mid-sentence dashes replaced (AVNU, Fortnite Islands, Madden NFL 18).
+- [x] **13 Nov 2026, new game:** One More Game Jam page (Godot, itch.io) with trailer, 4 screenshots and a 3:4 cover; now 20 game pages.
+- [x] **13 Nov 2026, images:** new portrait in the header, About page and preview card; Madden NFL 16 card uses the PS4 cover.
+- [x] **13 Nov 2026, resume:** new resume PDF and matching Resume page (skills section, updated roles, Udemy UE5 C++ course).
+- [ ] Optional: re-export the resume PDF without the long dashes (summary and job headings).
 
 ### If the site ever shows Porkbun's "Coming Soon" page
 
