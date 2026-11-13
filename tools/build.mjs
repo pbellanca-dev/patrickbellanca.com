@@ -97,7 +97,7 @@ write('index.html', layout({
   description: 'Patrick Bellanca is a lead game designer with 19 shipped games over 18+ years, from Madden NFL to Monopoly GO! to Fortnite islands and indie titles on Steam.',
   body: `<section class="wrap intro">
   <p class="eyebrow">Lead Game Designer · Boulder, CO</p>
-  <h1><strong>19 shipped games</strong> over 18+ years — from <em>Madden NFL</em> to <em>Monopoly GO!</em> to my own indie titles.</h1>
+  <h1><strong>19 shipped games</strong> — from <em>Madden NFL</em> to <em>Monopoly GO!</em> to my own indie titles.</h1>
 </section>
 <section class="wrap">
   <div class="section-head"><h2>Shipped Games</h2><p>Tap a game to read the breakdown.</p></div>
