@@ -18,7 +18,9 @@ Replaces the WordPress.com site so the $120/year plan can be cancelled.
 ## Editing
 
 1. Edit a file in `content/` (or add an image to `originals/<year>/<month>/` and run `sh tools/optimize.sh`).
-2. Run `node tools/build.mjs`.
+2. Run `node tools/build.mjs`. (If you changed a game's hero image or the home-page wording, also run
+   `sh tools/og.sh` to redraw the link-preview images in `docs/img/og/` — the site card is designed in
+   `tools/og-card.html`.)
 3. Commit and push. GitHub Pages republishes in about a minute.
 
 Adding a game: add a card to `content/games.json` (order = order on the home page), copy one of the

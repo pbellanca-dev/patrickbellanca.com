@@ -18,7 +18,7 @@ const icons = {
   play: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>',
 };
 
-function layout({ title, description, active, body, pathName, image = '/img/2024/07/portrait_small.webp', extraHead = '' }) {
+function layout({ title, description, active, body, pathName, image = '/img/og/og-card.png', imageAlt = 'Patrick Bellanca, Lead Game Designer', extraHead = '', home = false }) {
   const nav = [['/', 'Games'], ['/resume/', 'Resume'], ['/about-me/', 'About'], ['/achievements/', 'Achievements']]
     .map(([href, label]) => `<a href="${href}"${active === label ? ' aria-current="page"' : ''}>${label}</a>`).join('');
   const fullTitle = title ? `${title} – ${site.name}` : `${site.name} – ${site.tagline}`;
@@ -35,6 +35,10 @@ function layout({ title, description, active, body, pathName, image = '/img/2024
 <meta property="og:description" content="${attr(description)}">
 <meta property="og:url" content="${site.url}${pathName}">
 <meta property="og:image" content="${site.url}${image}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="${attr(imageAlt)}">
+<meta property="og:site_name" content="${site.name}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0b0d12">
 <link rel="icon" href="/favicon.png" type="image/png">
@@ -43,7 +47,8 @@ function layout({ title, description, active, body, pathName, image = '/img/2024
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
 <link rel="stylesheet" href="/css/style.css">
 ${extraHead}</head>
-<body>
+<body${home ? ' class="home"' : ''}>
+${home ? '<div class="ambient" aria-hidden="true"><span></span><span></span><span></span></div>\n' : ''}
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap header-inner">
@@ -88,11 +93,11 @@ const cards = games.map((g, i) => `
 // Old WordPress links like /?page_id=35 still land on the right page.
 const legacy = `<script>(function(){var m={33:'/',34:'/achievements/',35:'/resume/',36:'/about-me/'};var p=new URLSearchParams(location.search).get('page_id');if(p&&m[p]&&m[p]!=='/')location.replace(m[p]);})();</script>\n`;
 write('index.html', layout({
-  title: '', active: 'Games', pathName: '/', extraHead: legacy,
-  description: 'Patrick Bellanca is a lead game designer with 18+ years shipping games, from Madden NFL to Monopoly GO! to Fortnite islands and indie titles on Steam.',
+  title: '', active: 'Games', pathName: '/', extraHead: legacy, home: true,
+  description: 'Patrick Bellanca is a lead game designer with 19 shipped games over 18+ years, from Madden NFL to Monopoly GO! to Fortnite islands and indie titles on Steam.',
   body: `<section class="wrap intro">
   <p class="eyebrow">Lead Game Designer · Boulder, CO</p>
-  <h1>18+ years shipping games — from <em>Madden NFL</em> to <em>Monopoly GO!</em> to my own indie titles.</h1>
+  <h1><strong>19 shipped games</strong> over 18+ years — from <em>Madden NFL</em> to <em>Monopoly GO!</em> to my own indie titles.</h1>
 </section>
 <section class="wrap">
   <div class="section-head"><h2>Shipped Games</h2><p>Tap a game to read the breakdown.</p></div>
@@ -122,7 +127,7 @@ games.forEach((card, i) => {
   ${next ? `<a class="next" href="/${next.slug}/"><small>Next</small>${next.title}</a>` : '<span></span>'}
 </nav>`;
   write(`${g.slug}/index.html`, layout({
-    title: strip(g.title), active: 'Games', pathName: `/${g.slug}/`, image: g.hero,
+    title: strip(g.title), active: 'Games', pathName: `/${g.slug}/`, image: `/img/og/${g.slug}.jpg`, imageAlt: `${strip(g.title)} key art`,
     description: strip(g.intro[0] || '').slice(0, 155),
     body: `<article class="wrap game">
   <p class="eyebrow"><a href="/">Games</a> · ${card.years}</p>
@@ -145,7 +150,7 @@ ${sections}
 // ---- Simple pages ----
 const pages = [
   ['resume', 'Resume', 'Resume', 'Resume of Patrick Bellanca: lead game designer with 18+ years at EA Sports, Scopely, Sony Immersive Music Studios, Mythical Games and more.'],
-  ['about-me', 'About', 'About Me', 'About Patrick Bellanca, a game designer in Boulder, CO who has been making games for over 17 years.'],
+  ['about-me', 'About', 'About Me', 'About Patrick Bellanca, a game designer in Boulder, CO who has been making games for 18+ years.'],
   ['achievements', 'Achievements', 'Achievements', 'Career highlights: Congressional guest speaker, EA Outstanding Design honor, VR innovation lab founder and more.'],
 ];
 for (const [slug, active, title, description] of pages) {

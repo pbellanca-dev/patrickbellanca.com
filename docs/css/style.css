@@ -71,9 +71,10 @@ h1, h2, h3 { font-family: var(--display); line-height: 1.15; letter-spacing: -.0
 
 /* Intro / headings */
 .intro { padding-top: 40px; padding-bottom: 8px; }
+@media (min-width: 760px) { .intro { padding-top: 64px; padding-bottom: 16px; } }
 .eyebrow { color: var(--accent-2); font-size: .8rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; margin: 0 0 10px; }
 .eyebrow a { color: inherit; text-decoration: none; }
-.intro h1 { font-size: clamp(1.6rem, 5.5vw, 2.9rem); margin: 0; max-width: 22ch; font-weight: 700; }
+.intro h1 { font-size: clamp(1.6rem, 4vw, 3.2rem); margin: 0; font-weight: 700; text-wrap: balance; }
 .intro h1 em { font-style: normal; color: var(--accent); }
 .section-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 16px; margin: 36px 0 16px; }
 .section-head h2 { margin: 0; font-size: 1.4rem; }
@@ -157,6 +158,27 @@ h1, h2, h3 { font-family: var(--display); line-height: 1.15; letter-spacing: -.0
 .about p { color: #d3d8e2; margin: 0 0 14px; }
 .about .hello { font-family: var(--display); font-size: 2rem; color: var(--accent); margin: 0 0 8px; }
 @media (min-width: 820px) { .about { grid-template-columns: 5fr 7fr; gap: 40px; } .about img { position: sticky; top: 100px; } }
+
+/* Ambient background (home page) — slow drifting glows plus faint film grain */
+.ambient { position: fixed; inset: 0; z-index: -1; pointer-events: none; overflow: hidden; }
+.ambient span {
+  position: absolute; width: 70vmax; height: 70vmax; border-radius: 50%;
+  will-change: transform; animation: drift 46s ease-in-out infinite alternate;
+}
+.ambient span:nth-child(1) { left: -25vmax; top: -30vmax; background: radial-gradient(circle, rgba(255, 181, 71, .24), transparent 62%); }
+.ambient span:nth-child(2) { right: -30vmax; top: 5vmax; background: radial-gradient(circle, rgba(94, 224, 192, .18), transparent 62%); animation-duration: 58s; animation-delay: -20s; }
+.ambient span:nth-child(3) { left: 10vmax; bottom: -45vmax; background: radial-gradient(circle, rgba(140, 110, 255, .2), transparent 62%); animation-duration: 64s; animation-delay: -35s; }
+.ambient::after {
+  content: ""; position: absolute; inset: 0; opacity: .07; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+@keyframes drift {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(12vmax, 8vmax) scale(1.15); }
+  100% { transform: translate(-6vmax, 14vmax) scale(.95); }
+}
+body.home { background-image: none; }
+@media (prefers-reduced-motion: reduce) { .ambient span { animation: none; } }
 
 /* Footer */
 .site-footer { border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; padding: 20px 0 28px; }
