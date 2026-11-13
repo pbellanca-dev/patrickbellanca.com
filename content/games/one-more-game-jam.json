@@ -1,0 +1,36 @@
+{
+  "slug": "one-more-game-jam",
+  "title": "One More Game Jam",
+  "role": "Solo Developer – Godot",
+  "hero": "/img/2026/11/omgj-title.webp",
+  "intro": [
+    "<em>One More Game Jam</em> is a short incremental game about making games, playable in the browser on itch.io. I built it solo in Godot over a single weekend as an experiment: a game made in three days about making a game in three days."
+  ],
+  "sections": [
+    {
+      "heading": "GAME DESIGN &amp; CORE LOOP",
+      "paragraphs": [
+        "You play a game developer entering five game jams across five eras of gaming history, from a 1979 text adventure to a 2011 online sandbox. You type code, paint sprites, write music and ship your game before the clock runs out. The twist is that the game you are building is the one on the TV in front of you. It starts as a few white boxes and grows into the real thing as you work. Resource generators, upgrades and a new perk each jam day give the incremental loop its decisions, and a full run takes 20 to 30 minutes."
+      ]
+    },
+    {
+      "heading": "THREE DAYS, THREE MILESTONES",
+      "paragraphs": [
+        "I ran the project the way the game’s developer runs a jam. Day one was about proving the idea: a single complete, playable level. Day two turned that level into five playable levels, one for each era. Day three went to art, polish and playtesting, so the game would feel finished rather than just functional. Working under the same three-day clock as the player made every scope decision feel like one of the game’s own perk choices: keep it small, or scope up."
+      ]
+    }
+  ],
+  "link": {
+    "href": "https://lakeeffectinteractive.itch.io/one-more-game-jam",
+    "text": "Play One More Game Jam (itch.io)"
+  },
+  "videos": [
+    "/video/one-more-game-jam.mp4"
+  ],
+  "gallery": [
+    { "src": "/img/2026/11/omgj-shot1.webp", "caption": "" },
+    { "src": "/img/2026/11/omgj-shot2.webp", "caption": "" },
+    { "src": "/img/2026/11/omgj-shot3.webp", "caption": "" },
+    { "src": "/img/2026/11/omgj-shot4.webp", "caption": "" }
+  ]
+}

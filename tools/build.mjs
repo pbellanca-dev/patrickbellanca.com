@@ -94,10 +94,10 @@ const cards = games.map((g, i) => `
 const legacy = `<script>(function(){var m={33:'/',34:'/achievements/',35:'/resume/',36:'/about-me/'};var p=new URLSearchParams(location.search).get('page_id');if(p&&m[p]&&m[p]!=='/')location.replace(m[p]);})();</script>\n`;
 write('index.html', layout({
   title: '', active: 'Games', pathName: '/', extraHead: legacy, home: true,
-  description: 'Patrick Bellanca is a lead game designer with 19 shipped games over 18+ years, from Madden NFL to Monopoly GO! to Fortnite islands and indie titles on Steam.',
+  description: 'Patrick Bellanca is a lead game designer with 20 shipped games over 18+ years, from Madden NFL to Monopoly GO! to Fortnite islands and indie titles on Steam.',
   body: `<section class="wrap intro">
   <p class="eyebrow">Lead Game Designer · Boulder, CO</p>
-  <h1><strong>19 shipped games</strong> — from <em>Madden NFL</em> to <em>Monopoly GO!</em> to my own indie titles.</h1>
+  <h1><strong>20 shipped games</strong> — from <em>Madden NFL</em> to <em>Monopoly GO!</em> to my own indie titles.</h1>
 </section>
 <section class="wrap">
   <div class="section-head"><h2>Shipped Games</h2><p>Tap a game to read the breakdown.</p></div>

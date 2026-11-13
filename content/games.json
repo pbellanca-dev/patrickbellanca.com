@@ -1,5 +1,12 @@
 [
   {
+    "slug": "one-more-game-jam",
+    "title": "One More Game Jam",
+    "years": "2026",
+    "role": "Solo Developer",
+    "cover": "/img/2026/11/omgj-capsule.webp"
+  },
+  {
     "slug": "ragdoll-breakdown",
     "title": "Ragdoll and Seek",
     "years": "2026",
