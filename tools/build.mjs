@@ -111,7 +111,11 @@ games.forEach((card, i) => {
     const id = v.split('/').pop();
     return `<a class="video" href="https://www.youtube.com/watch?v=${id}" data-yt="${id}"><img src="https://i.ytimg.com/vi/${id}/hqdefault.jpg" alt="Play video" loading="lazy" width="480" height="360"><span class="play">${icons.play}</span></a>`;
   }).join('\n');
-  const gallery = g.gallery.map(x => `<figure><a href="${x.src}"><img src="${thumb(x.src)}" alt="${attr(x.caption ? strip(x.caption) : g.title + ' screenshot')}" loading="lazy"></a>${x.caption ? `<figcaption>${x.caption}</figcaption>` : ''}</figure>`).join('\n');
+  // Pages without a video use their first screenshot as the big tile, so every page has the same layout.
+  const featured = g.videos.length === 0 && g.gallery.length > 1;
+  const shot = (x, big) => `<figure${big ? ' class="feature"' : ''}><a href="${x.src}"><img src="${big ? x.src : thumb(x.src)}" alt="${attr(x.caption ? strip(x.caption) : g.title + ' screenshot')}" loading="lazy"></a>${x.caption ? `<figcaption>${x.caption}</figcaption>` : ''}</figure>`;
+  const feature = featured ? `<div class="videos">${shot(g.gallery[0], true)}</div>` : '';
+  const gallery = g.gallery.slice(featured ? 1 : 0).map(x => shot(x, false)).join('\n');
   const pager = `<nav class="pager" aria-label="More games">
   ${prev ? `<a class="prev" href="/${prev.slug}/"><small>Previous</small>${prev.title}</a>` : '<span></span>'}
   <a class="home" href="/">All games</a>
@@ -130,7 +134,7 @@ ${g.intro.map(p => `<p class="lede">${p}</p>`).join('\n')}
 ${sections}
   </div>
   ${g.link ? `<p><a class="button" href="${g.link.href}">${g.link.text} ${icons.arrow}</a></p>` : ''}
-  ${videos ? `<div class="videos">${videos}</div>` : ''}
+  ${videos ? `<div class="videos">${videos}</div>` : feature}
   ${gallery ? `<div class="gallery">${gallery}</div>` : ''}
   ${pager}
 </article>
