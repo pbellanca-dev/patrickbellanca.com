@@ -19,7 +19,7 @@ const icons = {
 };
 
 function layout({ title, description, active, body, pathName, image = '/img/og/og-card.png', imageAlt = 'Patrick Bellanca, Lead Game Designer', extraHead = '', home = false }) {
-  const nav = [['/', 'Games'], ['/resume/', 'Resume'], ['/about-me/', 'About'], ['/achievements/', 'Achievements']]
+  const nav = [['/', 'Games'], ['/resume/', 'Resume'], ['/about-me/', 'About'], ['/achievements/', 'Achievements'], ['/play/', 'Play']]
     .map(([href, label]) => `<a href="${href}"${active === label ? ' aria-current="page"' : ''}>${label}</a>`).join('');
   const fullTitle = title ? `${title} – ${site.name}` : `${site.name} – ${site.tagline}`;
   return `<!doctype html>
@@ -157,7 +157,30 @@ for (const [slug, active, title, description] of pages) {
   write(`${slug}/index.html`, layout({ title, active, description, pathName: `/${slug}/`, body: read(`content/pages/${slug}.html`) }));
 }
 
+// ---- Play ----
+// Blackjack dealer server (worker/). Set after deploying with wrangler.
+const PLAY_API = 'https://pb-blackjack.pb-blackjack.workers.dev';
+write('play/index.html', layout({ title: 'Play Blackjack', active: 'Play', pathName: '/play/',
+  description: 'PLAY: blackjack in your browser by Patrick Bellanca. How many hands can you win in a row?',
+  body: `<section class="wrap play">
+  <h1>Play Blackjack</h1>
+  <div class="bj" id="bj" data-api="${PLAY_API}">
+    <div class="bj-hud"><div><small>Win Streak</small><strong data-streak>0</strong></div><div class="bj-best"><small>Best</small><strong data-best>0</strong></div></div>
+    <div class="bj-dealer"><p class="bj-label">Dealer <span data-dtotal></span></p><div class="bj-hand" data-dealer></div></div>
+    <p class="bj-msg" data-msg aria-live="polite"></p>
+    <div class="bj-hands" data-hands></div>
+    <div class="bj-actions">
+      <button class="bj-btn primary" data-act="deal">Deal</button>
+      <button class="bj-btn" data-act="hit" hidden>Hit</button>
+      <button class="bj-btn" data-act="stand" hidden>Stand</button>
+    </div>
+    <div class="bj-panel" data-panel hidden role="dialog" aria-label="Leaderboard"></div>
+  </div>
+</section>
+<script src="/js/blackjack.js" defer></script>`,
+}));
+
 write('404.html', layout({ title: 'Page not found', active: '', description: 'Page not found.', pathName: '/404.html', body: `<section class="wrap intro"><p class="eyebrow">404</p><h1>That page isn’t here.</h1><p><a class="button" href="/">See all games ${icons.arrow}</a></p></section>` }));
-write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${['/', '/resume/', '/about-me/', '/achievements/', ...games.map(g => `/${g.slug}/`)].map(p => `  <url><loc>${site.url}${p}</loc></url>`).join('\n')}\n</urlset>\n`);
+write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${['/', '/resume/', '/about-me/', '/achievements/', '/play/', ...games.map(g => `/${g.slug}/`)].map(p => `  <url><loc>${site.url}${p}</loc></url>`).join('\n')}\n</urlset>\n`);
 write('robots.txt', `User-agent: *\nAllow: /\nSitemap: ${site.url}/sitemap.xml\n`);
 console.log('built', games.length + pages.length + 2, 'pages');

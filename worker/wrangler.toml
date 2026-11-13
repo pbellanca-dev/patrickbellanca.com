@@ -1,0 +1,9 @@
+name = "pb-blackjack"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "pb-blackjack"
+# Filled in after `npx wrangler d1 create pb-blackjack` (not a secret).
+database_id = "f8206e43-39a7-4cb0-92cc-367dd789d73f"

@@ -120,6 +120,23 @@ domain registration — those are separate products in the same account.
 - [x] Re-checked DNS after cancelling: GitHub A records and `www` CNAME still in place; old `_acme-challenge` records are gone.
 - [x] Porkbun domain registration on auto-renew; registered through 18 July 2027.
 
+## Play page (blackjack) and its leaderboard
+
+The Play tab is blackjack (hit or stand, streak mode). The cards are dealt by a small Cloudflare Worker in
+`worker/`, so the deck and the dealer's face-down card never reach the browser and leaderboard streaks are
+real. Scores live in a Cloudflare D1 database (free tier). Live dealer: https://pb-blackjack.pb-blackjack.workers.dev
+
+Run commands from the `worker/` folder (first time: `npm install`; log in with `npx wrangler login`):
+
+- Deploy a change to the dealer: `npx wrangler deploy`
+- See the leaderboard: `npx wrangler d1 execute pb-blackjack --remote --command "SELECT id, name, streak FROM scores ORDER BY streak DESC"`
+- Remove an entry: `npx wrangler d1 execute pb-blackjack --remote --command "DELETE FROM scores WHERE id = 123"`
+- Test locally: `npx wrangler d1 execute pb-blackjack --local --file=schema.sql` once, then `npx wrangler dev --port 8787`.
+  The Play page talks to the local dealer automatically when opened from localhost.
+
+Names are limited to 12 letters/numbers with a small rude-word filter (`BLOCKED` in `worker/src/index.js`).
+The dealer's address is set in `PLAY_API` in `tools/build.mjs`.
+
 ## Updates after launch
 
 - [x] **13 Nov 2026, polish:** full-width home headline; ambient glow on the home page; link-preview images (site card + one per game).
