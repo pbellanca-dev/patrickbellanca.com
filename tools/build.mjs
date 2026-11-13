@@ -53,7 +53,7 @@ ${home ? '<div class="ambient" aria-hidden="true"><span></span><span></span><spa
 <header class="site-header">
   <div class="wrap header-inner">
     <a class="brand" href="/">
-      <img src="/img/2024/07/portrait_small.thumb.webp" alt="" width="44" height="44">
+      <img src="/img/2026/11/portrait-2026-96.webp" alt="" width="44" height="44">
       <span><strong>${site.name}</strong><small>${site.tagline}</small></span>
     </a>
     <div class="social">
