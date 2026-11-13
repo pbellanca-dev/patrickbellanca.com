@@ -150,8 +150,15 @@
         } catch (x) { err.textContent = x.message; b.disabled = false; }
       });
       setTimeout(() => f.elements.name.focus({ preventScroll: true }), 50);
-    } else el.panel.querySelector('[data-again]').focus({ preventScroll: true });
-    el.panel.querySelector('[data-again]').addEventListener('click', () => {
+    }
+    // "Play again" sits where Hit/Stand were, so ignore it briefly: a late or double tap
+    // on Stand must not skip straight past the end screen.
+    const again = el.panel.querySelector('[data-again]');
+    if (!mine) {
+      again.disabled = true;
+      setTimeout(() => { again.disabled = false; if (!f) again.focus({ preventScroll: true }); }, 1200);
+    } else again.focus({ preventScroll: true });
+    again.addEventListener('click', () => {
       el.panel.hidden = true; sid = null; view = null;
       paint([], [], null, null, null); hud();
       act('/api/deal');
