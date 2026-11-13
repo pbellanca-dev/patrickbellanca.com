@@ -50,8 +50,9 @@ function layout({ title, description, active, body, pathName, image = '/img/og/o
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
 <link rel="stylesheet" href="/css/style.css">
 ${extraHead}</head>
-<body${home ? ' class="home"' : ''}>
-${home ? '<div class="ambient" aria-hidden="true"><span></span><span></span><span></span></div>\n' : ''}
+<body>
+<div class="ambient" aria-hidden="true"><span></span><span></span><span></span></div>
+
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap header-inner">

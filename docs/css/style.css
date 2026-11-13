@@ -178,7 +178,7 @@ h1, h2, h3 { font-family: var(--display); line-height: 1.15; letter-spacing: -.0
   50% { transform: translate(12vmax, 8vmax) scale(1.15); }
   100% { transform: translate(-6vmax, 14vmax) scale(.95); }
 }
-body.home { background-image: none; }
+body { background-image: none; } /* the drifting .ambient glow replaces the static one */
 @media (prefers-reduced-motion: reduce) { .ambient span { animation: none; } }
 
 /* Footer */
