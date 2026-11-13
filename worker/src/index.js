@@ -95,6 +95,13 @@ async function load(env, id) {
 }
 const save = (env, id, s) => env.DB.prepare('INSERT INTO sessions (id, state, updated) VALUES (?, ?, ?) ON CONFLICT(id) DO UPDATE SET state = excluded.state, updated = excluded.updated')
   .bind(id, JSON.stringify(s), Math.floor(Date.now() / 1000)).run();
+// A streak earns a save only if it would appear on the visible board.
+// Ties rank by who got there first, so a tie with 10th place would not show.
+async function qualifies(env, streak) {
+  if (!(streak > 0)) return false;
+  const row = await env.DB.prepare('SELECT streak FROM scores ORDER BY streak DESC, created ASC LIMIT 1 OFFSET ?').bind(BOARD_SIZE - 1).first();
+  return !row || streak > row.streak;
+}
 async function board(env) {
   const { results } = await env.DB.prepare('SELECT name, streak FROM scores ORDER BY streak DESC, created ASC LIMIT ?').bind(BOARD_SIZE).all();
   return results;
@@ -135,6 +142,7 @@ export default {
         path === '/api/hit' ? hit(s) : stand(s);
       } else if (path === '/api/submit') {
         if (s.phase !== 'over' || s.submitted || !(s.final > 0)) return json(req, { error: 'Nothing to submit.' }, 409);
+        if (!(await qualifies(env, s.final))) return json(req, { error: "That streak didn't make the top 10." }, 409);
         const n = cleanName(body.name);
         if (n.error) return json(req, { error: n.error }, 400);
         await env.DB.prepare('INSERT INTO scores (name, streak, created) VALUES (?, ?, ?)').bind(n.name, s.final, Date.now()).run();
@@ -145,7 +153,7 @@ export default {
 
       await save(env, body.sid, s);
       const out = view(s);
-      if (s.phase === 'over') out.board = await board(env);
+      if (s.phase === 'over') { out.board = await board(env); out.canSubmit = out.canSubmit && await qualifies(env, s.final); }
       return json(req, out);
     } catch (e) {
       return json(req, { error: 'Dealer is unavailable. Try again.' }, 500);

@@ -135,7 +135,7 @@
     const form = v.canSubmit
       ? `<form class="bj-form" data-form><label for="bj-name">Add your name to the leaderboard</label><div><input id="bj-name" name="name" maxlength="12" autocomplete="nickname" placeholder="Your name" required value="${esc(store.get('pb-bj-name') || '')}"><button class="bj-btn primary" type="submit">Save</button></div><p class="bj-err" data-err aria-live="polite"></p></form>`
       : '';
-    el.panel.innerHTML = `<h2>${v.streak} ${v.streak === 1 ? 'Win' : 'Wins'}</h2>${form}<h3>Win Streak Leaderboard</h3>${boardHtml(v.board, mine)}<button class="bj-btn primary" type="button" data-again>Play again</button>`;
+    el.panel.innerHTML = `<h2>${v.streak} ${v.streak === 1 ? 'Win!' : v.streak > 1 ? 'Wins!' : 'Wins'}</h2>${form}<h3>Win Streak Leaderboard</h3>${boardHtml(v.board, mine)}<button class="bj-btn primary" type="button" data-again>Play again</button>`;
     el.panel.hidden = false;
     const f = el.panel.querySelector('[data-form]');
     if (f) {
