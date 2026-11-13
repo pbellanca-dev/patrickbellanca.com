@@ -144,7 +144,12 @@ The dealer's address is set in `PLAY_API` in `tools/build.mjs`.
 - [x] **13 Nov 2026, new game:** One More Game Jam page (Godot, itch.io) with trailer, 4 screenshots and a 3:4 cover; now 20 game pages.
 - [x] **13 Nov 2026, images:** new portrait in the header, About page and preview card; Madden NFL 16 card uses the PS4 cover.
 - [x] **13 Nov 2026, resume:** new resume PDF and matching Resume page (skills section, updated roles, Udemy UE5 C++ course).
+- [x] **13 Nov 2026, resume fix:** "Built, scripted, and polished" on the Resume page and in the PDF.
+- [x] **13 Nov 2026, play:** Play tab with blackjack (hit or stand, win-streak mode, first hand deals itself). Reached only from the top menu.
+- [x] **13 Nov 2026, leaderboard:** shared win-streak leaderboard. Cards are dealt by a Cloudflare Worker (`worker/`) and scores live in Cloudflare D1, on a free Cloudflare account signed in with the same email. Starts empty.
+- [x] **13 Nov 2026, menu:** top menu centred on the page on every page.
 - [ ] Optional: re-export the resume PDF without the long dashes (summary and job headings).
+- [ ] Optional: watch the leaderboard for names that get past the filter and remove them (command above).
 
 ### If the site ever shows Porkbun's "Coming Soon" page
 
