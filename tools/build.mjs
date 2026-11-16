@@ -19,7 +19,7 @@ const icons = {
 };
 
 function layout({ title, description, active, body, pathName, image = '/img/og/og-card.png', imageAlt = 'Patrick Bellanca, Lead Game Designer', extraHead = '', home = false }) {
-  const nav = [['/', 'Games'], ['/resume/', 'Resume'], ['/about-me/', 'About'], ['/achievements/', 'Achievements'], ['/play/', 'Play']]
+  const nav = [['/', 'Games'], ['/resume/', 'Resume'], ['/about-me/', 'About'], ['/achievements/', 'Achievements']]
     .map(([href, label]) => `<a href="${href}"${active === label ? ' aria-current="page"' : ''}>${label}</a>`).join('');
   const fullTitle = title ? `${title} – ${site.name}` : `${site.name} – ${site.tagline}`;
   return `<!doctype html>
