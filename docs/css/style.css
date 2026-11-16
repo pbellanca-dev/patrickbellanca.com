@@ -71,13 +71,19 @@ h1, h2, h3 { font-family: var(--display); line-height: 1.15; letter-spacing: -.0
 }
 
 /* Intro / headings */
-.intro { padding-top: 40px; padding-bottom: 8px; }
-@media (min-width: 760px) { .intro { padding-top: 64px; padding-bottom: 16px; } }
+.intro { padding-top: 32px; padding-bottom: 0; }
 .eyebrow { color: var(--accent-2); font-size: .8rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; margin: 0 0 10px; }
+.intro h1.eyebrow { font-family: inherit; font-size: .8rem; font-weight: 600; line-height: 1.5; letter-spacing: .12em; margin: 0 0 10px; }
 .eyebrow a { color: inherit; text-decoration: none; }
 .intro h1 { font-size: clamp(1.6rem, 4vw, 3.2rem); margin: 0; font-weight: 700; text-wrap: balance; }
 .intro h1 em { font-style: normal; color: var(--accent); }
 .section-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 16px; margin: 36px 0 16px; }
+.filters { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { font: inherit; font-size: .9rem; font-weight: 600; color: var(--text); background: var(--surface-2); border: 1px solid var(--line); border-radius: 999px; padding: 7px 16px; cursor: pointer; }
+.chip:hover { border-color: var(--accent); }
+.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #1a1205; }
+.chip:focus-visible { outline: 2px solid var(--accent-2); outline-offset: 2px; }
+.grid > li[hidden] { display: none; }
 .section-head h2 { margin: 0; font-size: 1.4rem; }
 .section-head p { margin: 0; color: var(--muted); font-size: .9rem; }
 
@@ -143,6 +149,9 @@ h1, h2, h3 { font-family: var(--display); line-height: 1.15; letter-spacing: -.0
 
 /* Resume / about / achievements */
 .page { padding-top: 32px; padding-bottom: 56px; max-width: 900px; }
+.page.intro { padding-bottom: 0; }
+.page.games { padding-top: 0; padding-bottom: 8px; }
+.games .section-head { margin-top: 0; }
 .page h1 { font-size: clamp(1.9rem, 7vw, 3rem); margin: 0 0 8px; }
 .page > h2 { font-size: 1.3rem; margin: 40px 0 14px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
 .contact-line { color: var(--muted); margin: 0 0 18px; }

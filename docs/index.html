@@ -45,95 +45,95 @@
   </div>
 </header>
 <main id="main">
-<section class="wrap intro">
-  <p class="eyebrow">Lead Game Designer · Boulder, CO</p>
-  <h1><strong>20 shipped games</strong>, from <em>Madden NFL</em> to <em>Monopoly GO!</em> to my own indie titles.</h1>
+<section class="wrap page intro">
+  <h1 class="eyebrow">Games</h1>
 </section>
-<section class="wrap">
-  <div class="section-head"><h2>Shipped Games</h2><p>Tap a game to read the breakdown.</p></div>
-  <ul class="grid">
-    <li><a class="card" href="/one-more-game-jam/">
+<section class="wrap page games">
+  <div class="section-head"><div class="filters" role="group" aria-label="Filter games"><button type="button" class="chip" data-filter="all" aria-pressed="true">All Games</button><button type="button" class="chip" data-filter="shipped" aria-pressed="false">Shipped Games</button><button type="button" class="chip" data-filter="indie" aria-pressed="false">Indie Games</button><button type="button" class="chip" data-filter="side" aria-pressed="false">Side-Projects</button></div><p>Tap a game to read the breakdown.</p></div>
+  <ul class="grid" id="game-grid">
+    <li data-cat="side"><a class="card" href="/one-more-game-jam/">
       <img src="/img/2026/11/omgj-capsule.thumb.webp" alt="One More Game Jam cover art" loading="eager" width="400" height="533">
-      <span class="card-body"><span class="card-title">One More Game Jam</span><span class="card-meta">2026</span><span class="card-role">Solo Developer</span></span>
+      <span class="card-body"><span class="card-title">One More Game Jam</span><span class="card-meta">2026</span><span class="card-role">Game Designer & Programmer</span></span>
     </a></li>
-    <li><a class="card" href="/ragdoll-breakdown/">
+    <li data-cat="indie"><a class="card" href="/ragdoll-breakdown/">
       <img src="/img/2024/07/RagdollAndSeek_VerticalCapsule.thumb.webp" alt="Ragdoll and Seek cover art" loading="eager" width="400" height="533">
-      <span class="card-body"><span class="card-title">Ragdoll and Seek</span><span class="card-meta">2026</span><span class="card-role">Solo Developer</span></span>
+      <span class="card-body"><span class="card-title">Ragdoll and Seek</span><span class="card-meta">2026</span><span class="card-role">Game Designer & Programmer</span></span>
     </a></li>
-    <li><a class="card" href="/ajs-anomaly-breakdown/">
+    <li data-cat="indie"><a class="card" href="/ajs-anomaly-breakdown/">
       <img src="/img/2024/07/AjsAnomaly_Vertical_Capsule1.thumb.webp" alt="AJ’s Anomaly cover art" loading="eager" width="400" height="533">
-      <span class="card-body"><span class="card-title">AJ’s Anomaly</span><span class="card-meta">2026</span><span class="card-role">Lead Game Designer</span></span>
+      <span class="card-body"><span class="card-title">AJ’s Anomaly</span><span class="card-meta">2026</span><span class="card-role">Game Designer & Programmer</span></span>
     </a></li>
-    <li><a class="card" href="/nfl-rivals-breakdown/">
+    <li data-cat="shipped"><a class="card" href="/nfl-rivals-breakdown/">
       <img src="/img/2025/10/NFL_Rivals-scaled.thumb.webp" alt="NFL Rivals cover art" loading="eager" width="400" height="533">
-      <span class="card-body"><span class="card-title">NFL Rivals</span><span class="card-meta">2024 – 2025</span><span class="card-role">Lead Content Designer</span></span>
+      <span class="card-body"><span class="card-title">NFL Rivals</span><span class="card-meta">2024 – 2025</span><span class="card-role">Lead Game Designer</span></span>
     </a></li>
-    <li><a class="card" href="/fortnite-breakdown/">
+    <li data-cat="shipped"><a class="card" href="/fortnite-breakdown/">
       <img src="/img/2024/07/Fortn.thumb.webp" alt="Fortnite Islands cover art" loading="lazy" width="400" height="533">
-      <span class="card-body"><span class="card-title">Fortnite Islands</span><span class="card-meta">2023 – 2024</span><span class="card-role">Lead Game Designer</span></span>
+      <span class="card-body"><span class="card-title">Fortnite Islands</span><span class="card-meta">2023 – 2024</span><span class="card-role">Creative Director</span></span>
     </a></li>
-    <li><a class="card" href="/avnu-breakdown/">
+    <li data-cat="shipped"><a class="card" href="/avnu-breakdown/">
       <img src="/img/2024/07/avnu-1.thumb.webp" alt="AVNU cover art" loading="lazy" width="400" height="533">
-      <span class="card-body"><span class="card-title">AVNU</span><span class="card-meta">2022 – 2023</span><span class="card-role">Lead Game Designer</span></span>
+      <span class="card-body"><span class="card-title">AVNU</span><span class="card-meta">2022 – 2023</span><span class="card-role">Creative Director</span></span>
     </a></li>
-    <li><a class="card" href="/monopoly-breakdown/">
+    <li data-cat="shipped"><a class="card" href="/monopoly-breakdown/">
       <img src="/img/2024/07/mono2.thumb.webp" alt="Monopoly GO! cover art" loading="lazy" width="400" height="533">
       <span class="card-body"><span class="card-title">Monopoly GO!</span><span class="card-meta">2020 – 2021</span><span class="card-role">Lead Game Designer</span></span>
     </a></li>
-    <li><a class="card" href="/madden20-breakdown/">
+    <li data-cat="shipped"><a class="card" href="/madden20-breakdown/">
       <img src="/img/2024/07/12902939-83c5-4088-a845-5159d69d9f05-AP_Madden_20_Cover.thumb.webp" alt="Madden NFL 20 cover art" loading="lazy" width="400" height="533">
       <span class="card-body"><span class="card-title">Madden NFL 20</span><span class="card-meta">2018 – 2019</span><span class="card-role">Game Designer</span></span>
     </a></li>
-    <li><a class="card" href="/madden19-breakdown/">
+    <li data-cat="shipped"><a class="card" href="/madden19-breakdown/">
       <img src="/img/2024/07/steelers-antonio-brown-madden-19-cover-photojpg-3.thumb.webp" alt="Madden NFL 19 cover art" loading="lazy" width="400" height="533">
       <span class="card-body"><span class="card-title">Madden NFL 19</span><span class="card-meta">2017 – 2018</span><span class="card-role">Game Designer</span></span>
     </a></li>
-    <li><a class="card" href="/madden18-breakdown/">
+    <li data-cat="shipped"><a class="card" href="/madden18-breakdown/">
       <img src="/img/2024/07/MV5BMjc3NTM4OGEtMWFjNy00OTU0LTkxYTEtZTkzZjE5MmYwNDA2XkEyXkFqcGdeQXVyMTk2OTAzNTI@._V1_.thumb.webp" alt="Madden NFL 18 cover art" loading="lazy" width="400" height="533">
       <span class="card-body"><span class="card-title">Madden NFL 18</span><span class="card-meta">2016 – 2017</span><span class="card-role">Game Designer</span></span>
     </a></li>
-    <li><a class="card" href="/madden17-breakdown/">
+    <li data-cat="shipped"><a class="card" href="/madden17-breakdown/">
       <img src="/img/2024/07/MV5BMDQ0ZDA5YTItZTM4NS00Mjk3LTg1YmItODI2YmIzODRiZTgyXkEyXkFqcGdeQXVyMTk2OTAzNTI@._V1_.thumb.webp" alt="Madden NFL 17 cover art" loading="lazy" width="400" height="533">
       <span class="card-body"><span class="card-title">Madden NFL 17</span><span class="card-meta">2015 – 2016</span><span class="card-role">Game Designer</span></span>
     </a></li>
-    <li><a class="card" href="/madden16-breakdown/">
+    <li data-cat="shipped"><a class="card" href="/madden16-breakdown/">
       <img src="/img/2024/07/madden16ps4cover.thumb.webp" alt="Madden NFL 16 cover art" loading="lazy" width="400" height="533">
       <span class="card-body"><span class="card-title">Madden NFL 16</span><span class="card-meta">2014 – 2015</span><span class="card-role">Game Designer</span></span>
     </a></li>
-    <li><a class="card" href="/madden15-breakdown/">
+    <li data-cat="shipped"><a class="card" href="/madden15-breakdown/">
       <img src="/img/2024/07/MV5BMDhkNjc2OWQtNjUzOS00NDQ5LWFiM2YtMjQ4MGRjYWYxYmZiXkEyXkFqcGdeQXVyMTk2OTAzNTI@._V1_FMjpg_UX1000_.thumb.webp" alt="Madden NFL 15 cover art" loading="lazy" width="400" height="533">
-      <span class="card-body"><span class="card-title">Madden NFL 15</span><span class="card-meta">2013 – 2014</span><span class="card-role">Associate Game Designer</span></span>
+      <span class="card-body"><span class="card-title">Madden NFL 15</span><span class="card-meta">2013 – 2014</span><span class="card-role">Game Designer</span></span>
     </a></li>
-    <li><a class="card" href="/madden14-breakdown/">
+    <li data-cat="shipped"><a class="card" href="/madden14-breakdown/">
       <img src="/img/2024/07/Madden_NFL_25_Next-Gen.thumb.webp" alt="Madden NFL 14 cover art" loading="lazy" width="400" height="533">
-      <span class="card-body"><span class="card-title">Madden NFL 14</span><span class="card-meta">2012 – 2013</span><span class="card-role">Associate Game Designer</span></span>
+      <span class="card-body"><span class="card-title">Madden NFL 14</span><span class="card-meta">2012 – 2013</span><span class="card-role">Game Designer</span></span>
     </a></li>
-    <li><a class="card" href="/madden13-breakdown/">
+    <li data-cat="shipped"><a class="card" href="/madden13-breakdown/">
       <img src="/img/2024/07/Madden_NFL_13_cover.thumb.webp" alt="Madden NFL 13 cover art" loading="lazy" width="400" height="533">
-      <span class="card-body"><span class="card-title">Madden NFL 13</span><span class="card-meta">2011 – 2012</span><span class="card-role">Assistant Game Designer</span></span>
+      <span class="card-body"><span class="card-title">Madden NFL 13</span><span class="card-meta">2011 – 2012</span><span class="card-role">Game Designer</span></span>
     </a></li>
-    <li><a class="card" href="/madden12-breakdown/">
+    <li data-cat="shipped"><a class="card" href="/madden12-breakdown/">
       <img src="/img/2024/07/12.thumb.webp" alt="Madden NFL 12 cover art" loading="lazy" width="400" height="533">
-      <span class="card-body"><span class="card-title">Madden NFL 12</span><span class="card-meta">2010 – 2011</span><span class="card-role">Assistant Game Designer</span></span>
+      <span class="card-body"><span class="card-title">Madden NFL 12</span><span class="card-meta">2010 – 2011</span><span class="card-role">Game Designer</span></span>
     </a></li>
-    <li><a class="card" href="/madden11-breakdown/">
+    <li data-cat="shipped"><a class="card" href="/madden11-breakdown/">
       <img src="/img/2024/07/71AfEligLcL._AC_UF10001000_QL80_.thumb.webp" alt="Madden NFL 11 cover art" loading="lazy" width="400" height="533">
-      <span class="card-body"><span class="card-title">Madden NFL 11</span><span class="card-meta">2009 – 2010</span><span class="card-role">Junior Designer</span></span>
+      <span class="card-body"><span class="card-title">Madden NFL 11</span><span class="card-meta">2009 – 2010</span><span class="card-role">Game Designer</span></span>
     </a></li>
-    <li><a class="card" href="/madden-nfl-arcade/">
+    <li data-cat="shipped"><a class="card" href="/madden-nfl-arcade/">
       <img src="/img/2024/07/6-1-131256-52.thumb.webp" alt="Madden NFL Arcade cover art" loading="lazy" width="400" height="533">
-      <span class="card-body"><span class="card-title">Madden NFL Arcade</span><span class="card-meta">2009 – 2010</span><span class="card-role">Junior Designer</span></span>
+      <span class="card-body"><span class="card-title">Madden NFL Arcade</span><span class="card-meta">2009 – 2010</span><span class="card-role">Game Designer</span></span>
     </a></li>
-    <li><a class="card" href="/madden10-breakdown/">
+    <li data-cat="shipped"><a class="card" href="/madden10-breakdown/">
       <img src="/img/2024/07/61kTrQN3eL._AC_UF10001000_QL80_.thumb.webp" alt="Madden NFL 10 cover art" loading="lazy" width="400" height="533">
-      <span class="card-body"><span class="card-title">Madden NFL 10</span><span class="card-meta">2008 – 2009</span><span class="card-role">Automation Analyst</span></span>
+      <span class="card-body"><span class="card-title">Madden NFL 10</span><span class="card-meta">2008 – 2009</span><span class="card-role">Game Designer</span></span>
     </a></li>
-    <li><a class="card" href="/tiger09-breakdown/">
+    <li data-cat="shipped"><a class="card" href="/tiger09-breakdown/">
       <img src="/img/2024/07/maxresdefault-3.thumb.webp" alt="Tiger Woods 09 cover art" loading="lazy" width="400" height="533">
-      <span class="card-body"><span class="card-title">Tiger Woods 09</span><span class="card-meta">2007 – 2008</span><span class="card-role">Development Tester</span></span>
+      <span class="card-body"><span class="card-title">Tiger Woods 09</span><span class="card-meta">2007 – 2008</span><span class="card-role">Tester</span></span>
     </a></li>
   </ul>
 </section>
+<script>(function(){var bs=document.querySelectorAll('.chip'),items=document.querySelectorAll('#game-grid > li');bs.forEach(function(b){b.addEventListener('click',function(){var f=b.getAttribute('data-filter');bs.forEach(function(x){x.setAttribute('aria-pressed',x===b)});items.forEach(function(li){li.hidden=!(f==='all'||li.getAttribute('data-cat')===f)});});});})();</script>
 </main>
 <footer class="site-footer">
   <div class="wrap">

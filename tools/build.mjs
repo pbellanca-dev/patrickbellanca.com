@@ -89,8 +89,9 @@ function write(rel, html) {
 
 // ---- Home ----
 const games = JSON.parse(read('content/games.json'));
+const catOf = slug => slug === 'one-more-game-jam' ? 'side' : ['ragdoll-breakdown', 'ajs-anomaly-breakdown'].includes(slug) ? 'indie' : 'shipped';
 const cards = games.map((g, i) => `
-    <li><a class="card" href="/${g.slug}/">
+    <li data-cat="${catOf(g.slug)}"><a class="card" href="/${g.slug}/">
       <img src="${thumb(g.cover)}" alt="${attr(g.title)} cover art" loading="${i < 4 ? 'eager' : 'lazy'}" width="400" height="533">
       <span class="card-body"><span class="card-title">${g.title}</span><span class="card-meta">${g.years}</span><span class="card-role">${g.role}</span></span>
     </a></li>`).join('');
@@ -99,15 +100,15 @@ const legacy = `<script>(function(){var m={33:'/',34:'/achievements/',35:'/resum
 write('index.html', layout({
   title: '', active: 'Games', pathName: '/', extraHead: legacy, home: true,
   description: 'Patrick Bellanca is a lead game designer with 20 shipped games over 18+ years, from Madden NFL to Monopoly GO! to Fortnite islands and indie titles on Steam.',
-  body: `<section class="wrap intro">
-  <p class="eyebrow">Lead Game Designer · Boulder, CO</p>
-  <h1><strong>20 shipped games</strong>, from <em>Madden NFL</em> to <em>Monopoly GO!</em> to my own indie titles.</h1>
+  body: `<section class="wrap page intro">
+  <h1 class="eyebrow">Games</h1>
 </section>
-<section class="wrap">
-  <div class="section-head"><h2>Shipped Games</h2><p>Tap a game to read the breakdown.</p></div>
-  <ul class="grid">${cards}
+<section class="wrap page games">
+  <div class="section-head"><div class="filters" role="group" aria-label="Filter games"><button type="button" class="chip" data-filter="all" aria-pressed="true">All Games</button><button type="button" class="chip" data-filter="shipped" aria-pressed="false">Shipped Games</button><button type="button" class="chip" data-filter="indie" aria-pressed="false">Indie Games</button><button type="button" class="chip" data-filter="side" aria-pressed="false">Side-Projects</button></div><p>Tap a game to read the breakdown.</p></div>
+  <ul class="grid" id="game-grid">${cards}
   </ul>
-</section>`,
+</section>
+<script>(function(){var bs=document.querySelectorAll('.chip'),items=document.querySelectorAll('#game-grid > li');bs.forEach(function(b){b.addEventListener('click',function(){var f=b.getAttribute('data-filter');bs.forEach(function(x){x.setAttribute('aria-pressed',x===b)});items.forEach(function(li){li.hidden=!(f==='all'||li.getAttribute('data-cat')===f)});});});})();</script>`,
 }));
 
 // ---- Game breakdowns ----
