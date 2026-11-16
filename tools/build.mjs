@@ -93,7 +93,7 @@ const catOf = slug => slug === 'one-more-game-jam' ? 'side' : ['ragdoll-breakdow
 const cards = games.map((g, i) => `
     <li data-cat="${catOf(g.slug)}"><a class="card" href="/${g.slug}/">
       <img src="${thumb(g.cover)}" alt="${attr(g.title)} cover art" loading="${i < 4 ? 'eager' : 'lazy'}" width="400" height="533">
-      <span class="card-body"><span class="card-title">${g.title}</span><span class="card-meta">${g.years}</span><span class="card-role">${g.role}</span></span>
+      <span class="card-body"><span class="card-title">${g.title}</span><span class="card-meta">${g.company ? `${g.company} · ` : ''}${g.years}</span><span class="card-role">${g.role}</span></span>
     </a></li>`).join('');
 // Old WordPress links like /?page_id=35 still land on the right page.
 const legacy = `<script>(function(){var m={33:'/',34:'/achievements/',35:'/resume/',36:'/about-me/'};var p=new URLSearchParams(location.search).get('page_id');if(p&&m[p]&&m[p]!=='/')location.replace(m[p]);})();</script>\n`;
